@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ImgDesignType } from "../types";
+import { ImgDesignType, InvitationOpenedType } from "../types";
 
 export const Section = styled.section`
   margin: 1rem;
@@ -45,4 +45,13 @@ export const HalfSizedImg = styled.img<ImgDesignType>`
     width: fit-content;
     height: fit-content;
   }
+`;
+
+export const InvitationOpened = styled.div<InvitationOpenedType>`
+  position: ${props => props.opened ? "absolute" : "relative"};
+  display: ${props => props.opened ? "blocked" : "none"};
+  width: auto;
+  height: auto;
+  opacity: ${props => props.opened ? "1" : "0"};
+  transition: 2.2s;
 `;
