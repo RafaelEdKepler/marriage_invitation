@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100vw;
-  min-height: 10%;
+  min-height: 35rem;
   display: flex;
   justify-content: center;
   margin-top: 5rem;
 
   @media (max-width: 430px) {
+    min-height: 30rem;
     margin-top: 2rem;
   }
 `;

@@ -5,16 +5,16 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100%;
   }
 
   body {
+    font-family: "EB Garamond", sans-serif;
     background-image: url('/casamento.gif');
     background-repeat: repeat;
-    background-size: cover;
+    background-size: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
   }
 `;

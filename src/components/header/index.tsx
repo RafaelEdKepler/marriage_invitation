@@ -6,6 +6,21 @@ export default function HeaderComponent() {
 
   const [menuMobileOpened, setMenuMobileOpened] = useState(false);
 
+  const menuOptions = [
+    {
+      title: "Sobre nós",
+      link: "#"
+    },
+    {
+      title: "Transmissão",
+      link: "#"
+    },
+    {
+      title: "Lista de Presentes",
+      link: "#"
+    },
+  ]
+
   return (
     <HeaderContainer>
       <MenuMobile menuOpened={menuMobileOpened} >
@@ -13,41 +28,25 @@ export default function HeaderComponent() {
           <CloseMobileMenu onClick={() => setMenuMobileOpened(!menuMobileOpened)}>
             <X size={32} weight="bold" color="#eee6d5" />
           </CloseMobileMenu>
-          <MenuMobileOption>
-            <a href="#">
-              <span>Sobre nós</span>
-            </a>
-          </MenuMobileOption>
-          <MenuMobileOption>
-            <a href="#">
-              <span>Transmissão</span>
-            </a>
-          </MenuMobileOption>
-          <MenuMobileOption>
-            <a href="#">
-              <span>Lista de Presentes</span>
-            </a>
-          </MenuMobileOption>
+          {menuOptions.map(item => (
+            <MenuMobileOption key={item.title}>
+              <a href={item.link}>
+                <span>{item.title}</span>
+              </a>
+            </MenuMobileOption>
+          ))}
         </div>
       </MenuMobile>
       <MenuMobileIcon onClick={() => setMenuMobileOpened(!menuMobileOpened)}>
         <List weight="bold" size={32} color="#eee6d5" />
       </MenuMobileIcon>
-      <MenuOption>
-        <a href="#">
-          <span>Sobre nós</span>
-        </a>
-      </MenuOption>
-      <MenuOption>
-        <a href="#">
-          <span>Transmissão</span>
-        </a>
-      </MenuOption>
-      <MenuOption>
-        <a href="#">
-          <span>Lista de Presentes</span>
-        </a>
-      </MenuOption>
+      {menuOptions.map(item => (
+        <MenuOption key={item.title}>
+          <a href={item.link}>
+            <span>{item.title}</span>
+          </a>
+        </MenuOption>
+      ))}
     </HeaderContainer>
   )
 }

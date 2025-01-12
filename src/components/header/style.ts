@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MenuMobileType } from "./type";
 
 export const HeaderContainer = styled.div`
-  height: 8%;
+  height: 5rem;
   display: flex;
   background-color: ${props => props.theme.colors["invitation-red-theme"]};
   background-image: url("coracao.png");
@@ -13,6 +13,10 @@ export const HeaderContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: 0.25rem;
+
+  @media (max-width: 430px) {
+    height: 3rem;
+  }
 `;
 
 export const MenuOption = styled.div`
@@ -52,6 +56,7 @@ export const MenuMobile = styled.div<MenuMobileType>`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  height: 100vh;
   left: 0;
   top: 0;
   width: ${props => props.menuOpened ? "75vw" : "0"};

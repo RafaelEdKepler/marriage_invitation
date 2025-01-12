@@ -4,7 +4,7 @@ import { ImgDesignType, InvitationOpenedType } from "../types";
 export const Section = styled.section`
   margin: 1rem;
   width: 95vw;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
