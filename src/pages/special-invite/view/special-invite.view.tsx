@@ -14,7 +14,7 @@ export default function SpecialInviteView({ invitationShowed, invitationStatus, 
       <Container invitationClicked={invitationShowed}>
         <VideoContainer>
           {/* @ts-expect-error err */}
-          <iframe width={innerWidth > 430 ? "800" : "250"} height={innerWidth > 430 ? "400" : "200"} src="https://www.youtube.com/embed/1sXx_GGeIBQ?si=lvLCYhdqaDsYu15F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          <iframe width={innerWidth > 430 ? "800" : "250"} height={innerWidth > 430 ? "400" : "200"} src="https://www.youtube.com/embed/1sXx_GGeIBQ?si=lvLCYhdqaDsYu15F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </VideoContainer>
       </Container>
     </Section>
