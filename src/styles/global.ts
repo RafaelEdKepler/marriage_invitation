@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-image: url('casamento.gif');
+    background-image: url('/casamento.gif');
     background-repeat: repeat;
     background-size: cover;
     display: flex;

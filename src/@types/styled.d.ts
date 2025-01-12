@@ -6,7 +6,8 @@ type ThemeType = typeof defaultTheme
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      "invitation-red-theme": string
+      "invitation-red-theme": string,
+      "invitation-golden-theme": string
     }
   }
 }

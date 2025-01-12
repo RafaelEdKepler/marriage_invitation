@@ -1,18 +1,79 @@
 import styled from "styled-components";
+import { MenuMobileType } from "./type";
 
 export const HeaderContainer = styled.div`
   height: 8%;
   display: flex;
   background-color: ${props => props.theme.colors["invitation-red-theme"]};
+  background-image: url("coracao.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100vw;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0.25rem;
 `;
 
-export const HearthContainer = styled.div`
-  height: 100%;
+export const MenuOption = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 1.5rem;
+  padding-left: 3.5rem;
 
-  img {
-    padding-bottom: 5px;
+  span {
+    font-size: 20px;
+    color: ${props => props.theme.colors["invitation-golden-theme"]};
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 430px) {
+    display: none;
+  }
+`;
+
+export const MenuMobileIcon = styled.div`
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  @media (max-width: 430px) {
+    display: flex;
+  }
+`;
+
+export const MenuMobile = styled.div<MenuMobileType>`
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  left: 0;
+  top: 0;
+  width: ${props => props.menuOpened ? "75vw" : "0"};
+  background-color: ${props => props.theme.colors["invitation-red-theme"]};
+  transition: 0.2s;
+
+  div {
+    display: ${props => props.menuOpened ? "flex" : "none"};
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+`;
+
+export const CloseMobileMenu = styled.div`
+  width: 75vw;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 1rem;
+`;
+
+export const MenuMobileOption = styled(MenuOption)`
+  padding: 2rem;
 `;

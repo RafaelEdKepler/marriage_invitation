@@ -6,9 +6,7 @@ export default function HomeView({ invitationShowed, invitationStatus, onInvitat
     <Section onClick={onInvitationClick}>
       <HalfSizedImg vanished={invitationStatus} src="esquerda.png" direction="left" />
       <HalfSizedImg vanished={invitationStatus} src="direita.png" direction="right" />
-      <InvitationOpened opened={invitationShowed}>
-
-      </InvitationOpened>
+      <InvitationOpened opened={invitationShowed} />
     </Section>
   )
 }
