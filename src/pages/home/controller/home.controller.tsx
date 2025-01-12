@@ -1,7 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
 import HomeView from "../view/home.view";
+import { useNavigate } from "react-router-dom";
+
 
 export default function HomeController() {
+
+  const navigate = useNavigate();
 
   const [invitationClicked, setInvitationClicked] = useState(false);
   const [invitationShowed, setInvitationShowed] = useState(false);
@@ -17,6 +21,14 @@ export default function HomeController() {
       }, 1000)
     }
   }, [invitationClicked])
+
+  useEffect(() => {
+    if (invitationShowed) {
+      setTimeout(() => {
+        navigate("/invitated");
+      }, 2000)
+    }
+  }, [invitationShowed, navigate])
 
   return (
     <HomeView

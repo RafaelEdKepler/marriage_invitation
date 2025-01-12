@@ -50,8 +50,22 @@ export const HalfSizedImg = styled.img<ImgDesignType>`
 export const InvitationOpened = styled.div<InvitationOpenedType>`
   position: ${props => props.opened ? "absolute" : "relative"};
   display: ${props => props.opened ? "blocked" : "none"};
-  width: auto;
-  height: auto;
+  width: 75%;
+  height: 55%;
   opacity: ${props => props.opened ? "1" : "0"};
   transition: 2.2s;
+  animation: upscale 1.2s ease-in;
+  background-image: url("coracao.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @keyframes upscale {
+    0% {
+      height: 0%;
+    }
+    75% {
+      height: 55%;
+    }
+  }
 `;
