@@ -80,6 +80,10 @@ export const SocialMediaContainer = styled(OnlyTitleContainer)`
 export const SpotifyContainer = styled(OnlyTitleContainer)`
   flex-direction: row;
 
+  svg {
+    cursor: pointer;
+  }
+
   @media (max-width: 430px) {
     svg {
       margin-left: 0.25rem;
