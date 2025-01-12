@@ -3,8 +3,7 @@ import { ImgDesignType, InvitationOpenedType } from "../types";
 
 export const Section = styled.section`
   margin: 1rem;
-  width: 95vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,9 +40,9 @@ export const HalfSizedImg = styled.img<ImgDesignType>`
     100% { transform: translate(-0.5px, -0.5px) rotate(-0.3deg); }
   }
 
-  @media (max-width: 430px) {
-    width: fit-content;
-    height: fit-content;
+  @media (max-width: 530px) {
+    height: 60vh;
+    width: 40vw;
   }
 `;
 
