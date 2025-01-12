@@ -8,7 +8,7 @@ export default function Router() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/invitated" element={<Invitated />} />
-      <Route path="/special" element={<SpecialInvite />} />
+      <Route path="/special-invite/:groom" element={<SpecialInvite />} />
     </Routes>
   )
 }
