@@ -67,6 +67,10 @@ export const CenteredContent = styled.div`
     @media (max-height: 650px) {
       font-size: 1rem;
     }
+
+    @media (max-width: 430px) {
+      font-size: 1rem;
+    }
   }
 
   h1 {

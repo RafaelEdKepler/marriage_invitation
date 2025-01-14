@@ -28,7 +28,7 @@ export const NumberContainer = styled.div<NumberContainerType>`
     color: ${props => props.colon ? props.theme.colors["invitation-red-theme"] : props.theme.colors["invitation-golden-theme"]};
 
     @media (max-width: 430px) {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
 
     @media (max-height: 650px) {
@@ -36,7 +36,7 @@ export const NumberContainer = styled.div<NumberContainerType>`
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-height: 650px) {
     width: ${props => props.colon ? "0.5rem" : "2rem"};
     height: 5rem;
     padding-bottom: ${props => props.colon ? "0.5rem" : "0"};
@@ -45,7 +45,7 @@ export const NumberContainer = styled.div<NumberContainerType>`
 
   @media (max-width: 430px) {
     width: ${props => props.colon ? "0.5rem" : "2rem"};
-    height: 5rem;
+    height: 4rem;
     padding-bottom: ${props => props.colon ? "0.5rem" : "0"};
     display: ${props => props.seconds ? "none" : "flex"};
   }
