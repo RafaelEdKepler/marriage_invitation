@@ -47,11 +47,6 @@ export const CenteredContent = styled.div`
       width: 60%;
       height: 60%;
     }
-
-    @media (min-height: 650px) and (max-height: 1000px) {
-      width: 70%;
-      height: 70%;
-    }
   }
 
   span {
