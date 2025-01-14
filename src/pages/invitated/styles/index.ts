@@ -30,6 +30,17 @@ export const NumberContainer = styled.div<NumberContainerType>`
     @media (max-width: 430px) {
       font-size: 3rem;
     }
+
+    @media (max-height: 650px) {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    width: ${props => props.colon ? "0.5rem" : "2rem"};
+    height: 5rem;
+    padding-bottom: ${props => props.colon ? "0.5rem" : "0"};
+    display: ${props => props.seconds ? "none" : "flex"};
   }
 
   @media (max-width: 430px) {

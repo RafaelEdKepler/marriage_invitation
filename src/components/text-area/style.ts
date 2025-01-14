@@ -6,10 +6,16 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   margin-top: 2.5rem;
+  max-height: 80%;
 
   @media (max-width: 430px) {
     min-height: 30rem;
     margin-top: 1.5rem;
+  }
+
+  @media (max-height: 650px) {
+    font-size: 1.25rem;
+    margin-top: 1rem;
   }
 `;
 
@@ -17,8 +23,10 @@ export const ContainerWhiteArea = styled.div`
   width: 75%;
   background-color: #fff;
   padding: 2rem;
+  height: 60%;
+  overflow: hidden;
 
-  @media (max-width: 430px) {
+  @media (max-width: 830px) {
     width: 85%;
   }
 `;
@@ -36,6 +44,11 @@ export const CenteredContent = styled.div`
     height: 25%;
 
     @media (max-width: 430px) {
+      width: 60%;
+      height: 60%;
+    }
+
+    @media (min-height: 650px) and (max-height: 1000px) {
       width: 70%;
       height: 70%;
     }
@@ -50,6 +63,10 @@ export const CenteredContent = styled.div`
     font-size: 1.25rem;
     text-align: center;
     font-style: italic;
+
+    @media (max-height: 650px) {
+      font-size: 1rem;
+    }
   }
 
   h1 {
@@ -58,6 +75,11 @@ export const CenteredContent = styled.div`
 
     @media (max-width: 430px) {
       margin-top: 0.5rem;
+    }
+
+    @media (max-height: 650px) {
+      font-size: 1.25rem;
+      margin-top: 0.25rem;
     }
   }
 `;
