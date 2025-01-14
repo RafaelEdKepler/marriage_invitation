@@ -1,11 +1,12 @@
 import { CenteredContent, Container, ContainerWhiteArea } from "./style";
+import { TextAreaType } from "./types";
 
-export default function TextAreaComponent() {
+export default function TextAreaComponent({ children }: TextAreaType) {
   return (
     <Container>
       <ContainerWhiteArea>
         <CenteredContent>
-          <img src="nomes.png" />
+          {children}
         </CenteredContent>
       </ContainerWhiteArea>
     </Container>

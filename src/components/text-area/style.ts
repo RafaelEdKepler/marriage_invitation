@@ -5,11 +5,11 @@ export const Container = styled.section`
   min-height: 35rem;
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 
   @media (max-width: 430px) {
     min-height: 30rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 `;
 
@@ -25,18 +25,39 @@ export const ContainerWhiteArea = styled.div`
 
 export const CenteredContent = styled.div`
   width: 100%;
-  height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 
   img {
-    width: 55%;
-    height: 55%;
+    margin-top: 1rem;
+    width: 25%;
+    height: 25%;
 
     @media (max-width: 430px) {
-      width: 100%;
-      height: 100%;
+      width: 70%;
+      height: 70%;
+    }
+  }
+
+  span {
+    font-size: 1rem;
+  }
+
+  h2 {
+    color: ${props => props.theme.colors["invitation-red-theme"]};
+    font-size: 1.25rem;
+    text-align: center;
+    font-style: italic;
+  }
+
+  h1 {
+    color: ${props => props.theme.colors["invitation-red-theme"]};
+    margin-top: 2.5rem;
+
+    @media (max-width: 430px) {
+      margin-top: 0.5rem;
     }
   }
 `;
