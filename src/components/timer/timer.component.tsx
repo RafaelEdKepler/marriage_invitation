@@ -1,5 +1,6 @@
-import { NumberContainer, TimeoutContainer } from "../styles";
-import { InvitatedType } from "../types";
+import { InvitatedType } from "../../pages/invitated/types";
+import { NumberContainer, TimeoutContainer } from "./styles";
+
 
 export default function TimerComponent({ days, hours, minutes, seconds }: InvitatedType) {
   return (

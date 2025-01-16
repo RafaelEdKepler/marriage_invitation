@@ -5,7 +5,7 @@ export default function SpecialInviteView({ invitationShowed, invitationStatus, 
 
   const { innerWidth } = window;
 
-  // const { groom } = useParams();
+  // const { name } = useParams();
 
   return (
     <Section onClick={onInvitationClick}>

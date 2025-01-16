@@ -4,8 +4,3 @@ export interface InvitatedType {
   minutes: string;
   seconds: string;
 }
-
-export interface NumberContainerType {
-  colon?: "true";
-  seconds?: "true";
-}

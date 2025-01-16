@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MenuMobileType } from "./type";
+import { MenuMobileOptionType, MenuMobileType } from "./type";
 
 export const HeaderContainer = styled.div`
   height: 5rem;
@@ -81,4 +81,20 @@ export const CloseMobileMenu = styled.div`
 
 export const MenuMobileOption = styled(MenuOption)`
   padding: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  overflow: visible;
+
+  `;
+
+export const SpecialMenuMobileOption = styled(MenuMobileOption) <MenuMobileOptionType>`
+  background-image: url("/target.png");
+  display: ${props => props.isMenuVisible ? "flex" : "none !important"};
+
+  a {
+    span {
+      opacity: 0.9;
+    }
+  }
 `;

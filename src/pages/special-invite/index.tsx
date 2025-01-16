@@ -1,3 +1,3 @@
-import SpecialInviteController from "./controller/special-invite.view";
+import SpecialInviteController from "./controller/special-invite.controller";
 
 export default SpecialInviteController;

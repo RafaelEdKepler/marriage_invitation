@@ -1,7 +1,7 @@
 import FooterComponent from "../../../components/footer";
 import HeaderComponent from "../../../components/header/";
 import TextAreaComponent from "../../../components/text-area";
-import TimerComponent from "../component/timer.component";
+import TimerComponent from "../../../components/timer/timer.component";
 import { InvitatedType } from "../types";
 
 export default function InvitatedView({ days, hours, minutes, seconds }: InvitatedType) {
