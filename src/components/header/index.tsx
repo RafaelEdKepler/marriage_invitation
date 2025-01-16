@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { CloseMobileMenu, HeaderContainer, MenuMobile, MenuMobileIcon, MenuMobileOption, MenuOption, SpecialMenuMobileOption } from "./style";
 import { List, X } from "@phosphor-icons/react"
-import { } from "dotenv";
 import { UsersAGroomsMenOrBridesMaid } from "./type";
 
 export default function HeaderComponent() {
