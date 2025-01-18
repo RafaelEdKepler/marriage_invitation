@@ -7,3 +7,10 @@ export interface SpecialInviteType {
 export interface ContainerType {
   invitationClicked: boolean;
 }
+
+export enum namesEnum {
+  lucas = "Lucas",
+  gabi = "Gabriela",
+  heloisa = "Heloísa",
+  leandro = "Leandro"
+}

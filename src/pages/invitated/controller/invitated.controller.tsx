@@ -1,6 +1,6 @@
-import { differenceInSeconds } from "date-fns";
 import InvitatedView from "../view/invitated.view";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { calculateDifferenceInTime } from "../../../utils/calculate-time-countdown";
 
 export default function InvitatedController() {
 
@@ -13,14 +13,11 @@ export default function InvitatedController() {
 
   const handleCalculateCountdown = useCallback(() => {
     const actualDate = new Date();
-    const totalSeconds = differenceInSeconds(marriageDate, actualDate);
-    const totalMinutes = Math.floor(totalSeconds / 60);
-    const totalHours = Math.floor(totalMinutes / 60);
-
-    setDays(String(Math.floor(totalHours / 24)));
-    setSeconds(String(Math.floor(totalSeconds % 60)));
-    setMinutes(String(Math.floor(totalMinutes % 60)));
-    setHours(String(Math.floor(totalHours % 24)));
+    const { days, hours, minutes, seconds } = calculateDifferenceInTime(actualDate, marriageDate);
+    setDays(days);
+    setSeconds(seconds);
+    setMinutes(minutes);
+    setHours(hours);
   }, [marriageDate])
 
   useEffect(() => {
@@ -34,9 +31,9 @@ export default function InvitatedController() {
   return (
     <InvitatedView
       days={days}
-      hours={hours.length < 2 ? `0${hours}` : hours}
-      minutes={minutes.length < 2 ? `0${minutes}` : minutes}
-      seconds={seconds.length < 2 ? `0${seconds}` : seconds}
+      hours={hours}
+      minutes={minutes}
+      seconds={seconds}
     />
   )
 }

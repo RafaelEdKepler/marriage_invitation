@@ -3,6 +3,13 @@ import { NumberContainer, TimeoutContainer } from "./styles";
 
 
 export default function TimerComponent({ days, hours, minutes, seconds }: InvitatedType) {
+
+  days = days.length < 2 ? `0${days}` : days;
+  days = days.length < 3 ? `0${days}` : days;
+  hours = hours.length < 2 ? `0${hours}` : hours;
+  minutes = minutes.length < 2 ? `0${minutes}` : minutes;
+  seconds = seconds.length < 2 ? `0${seconds}` : seconds;
+
   return (
     <TimeoutContainer>
       <NumberContainer>

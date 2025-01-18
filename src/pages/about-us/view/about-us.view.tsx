@@ -1,17 +1,23 @@
 import HeaderComponent from "../../../components/header";
 import TextAreaComponent from "../../../components/text-area";
 import TimerComponent from "../../../components/timer/timer.component";
+import { AboutUseViewType } from "../types";
 
-export default function AboutUsView() {
+export default function AboutUsView({
+  days,
+  hours,
+  minutes,
+  seconds
+}: AboutUseViewType) {
   return (
     <>
       <HeaderComponent />
       <TextAreaComponent>
         <TimerComponent
-          days="100"
-          hours="10"
-          minutes="10"
-          seconds="10"
+          days={days}
+          hours={hours}
+          minutes={minutes}
+          seconds={seconds}
         />
       </TextAreaComponent>
     </>

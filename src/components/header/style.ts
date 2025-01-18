@@ -35,8 +35,25 @@ export const MenuOption = styled.div`
     text-decoration: none;
   }
 
-  @media (max-width: 430px) {
-    display: none;
+  @media (max-width: 630px) and (max-height: 650px) {
+    display: none !important;
+  }
+`;
+
+export const SpecialMenuOption = styled(MenuOption) <MenuMobileOptionType>`
+  display: ${props => props.isMenuVisible ? "flex" : "none !important"};
+  align-items: center;
+
+  img {
+    width: 70px;
+    height: 50px;
+    margin-right: -65px;
+  }
+
+  a {
+    span {
+      opacity: 0.9;
+    }
   }
 `;
 
@@ -46,7 +63,7 @@ export const MenuMobileIcon = styled.div`
   align-items: center;
   padding: 1rem;
 
-  @media (max-width: 430px) {
+  @media (max-width: 630px) and (max-height: 650px) {
     display: flex;
   }
 `;
@@ -85,8 +102,7 @@ export const MenuMobileOption = styled(MenuOption)`
   background-repeat: no-repeat;
   background-position: left;
   overflow: visible;
-
-  `;
+`;
 
 export const SpecialMenuMobileOption = styled(MenuMobileOption) <MenuMobileOptionType>`
   background-image: url("/target.png");

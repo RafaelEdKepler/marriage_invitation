@@ -16,6 +16,22 @@ export const Container = styled.div<ContainerType>`
   }
 `;
 
+export const InvitationContainer = styled.div`
+
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  p, h2 {
+    margin-bottom: 2rem;
+    font-style: normal;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+`;
+
 export const VideoContainer = styled.div`
   width: 800px;
   height: 400px;

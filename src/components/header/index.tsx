@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CloseMobileMenu, HeaderContainer, MenuMobile, MenuMobileIcon, MenuMobileOption, MenuOption, SpecialMenuMobileOption } from "./style";
+import { CloseMobileMenu, HeaderContainer, MenuMobile, MenuMobileIcon, MenuMobileOption, MenuOption, SpecialMenuMobileOption, SpecialMenuOption } from "./style";
 import { List, X } from "@phosphor-icons/react"
 import { UsersAGroomsMenOrBridesMaid } from "./type";
 
@@ -12,7 +12,7 @@ export default function HeaderComponent() {
   const menuOptions = [
     {
       title: "Sobre nós",
-      link: "#",
+      link: "/about-us",
     },
     {
       title: "Transmissão",
@@ -37,7 +37,7 @@ export default function HeaderComponent() {
             <X size={32} weight="bold" color="#eee6d5" />
           </CloseMobileMenu>
           {menuOptions.map(item => (
-            <>
+            <div key={item.title}>
               {item.hiddenMenu ? (
                 <SpecialMenuMobileOption isMenuVisible={!!(isUserAGroom)}>
                   <a href={item.link}>
@@ -51,7 +51,7 @@ export default function HeaderComponent() {
                   </a>
                 </MenuMobileOption>
               )}
-            </>
+            </div>
           ))}
         </div>
       </MenuMobile>
@@ -59,11 +59,22 @@ export default function HeaderComponent() {
         <List weight="bold" size={32} color="#eee6d5" />
       </MenuMobileIcon>
       {menuOptions.map(item => (
-        <MenuOption key={item.title}>
-          <a href={item.link}>
-            <span>{item.title}</span>
-          </a>
-        </MenuOption>
+        <div key={item.title}>
+          {item.hiddenMenu ? (
+            <SpecialMenuOption isMenuVisible={!!(isUserAGroom)}>
+              <img src="/target.png" />
+              <a href={item.link}>
+                <span>{item.title}</span>
+              </a>
+            </SpecialMenuOption>
+          ) : (
+            <MenuOption>
+              <a href={item.link}>
+                <span>{item.title}</span>
+              </a>
+            </MenuOption>
+          )}
+        </div>
       ))}
     </HeaderContainer>
   )
