@@ -35,7 +35,7 @@ export const MenuOption = styled.div`
     text-decoration: none;
   }
 
-  @media (max-width: 500px) and (max-height: 650px) {
+  @media (max-width: 768px) {
     display: none !important;
   }
 `;
