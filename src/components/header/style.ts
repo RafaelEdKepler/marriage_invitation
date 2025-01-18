@@ -36,7 +36,7 @@ export const MenuOption = styled.div`
   }
 
   @media (max-width: 768px) {
-    display: none !important;
+    display: none;
   }
 `;
 
