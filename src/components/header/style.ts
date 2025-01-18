@@ -63,7 +63,7 @@ export const MenuMobileIcon = styled.div`
   align-items: center;
   padding: 1rem;
 
-  @media (max-width: 630px) and (max-height: 650px) {
+  @media (max-width: 768px) {
     display: flex;
   }
 `;
