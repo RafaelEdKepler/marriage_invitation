@@ -102,6 +102,10 @@ export const MenuMobileOption = styled(MenuOption)`
   background-repeat: no-repeat;
   background-position: left;
   overflow: visible;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
 `;
 
 export const SpecialMenuMobileOption = styled(MenuMobileOption) <MenuMobileOptionType>`
