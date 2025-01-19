@@ -11,6 +11,6 @@ export interface ContainerType {
 export enum namesEnum {
   lucas = "Lucas",
   gabi = "Gabriela",
-  heloisa = "Heloísa",
+  heloisa = "Heloisa",
   leandro = "Leandro"
 }
