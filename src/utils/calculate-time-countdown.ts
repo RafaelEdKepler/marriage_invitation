@@ -7,6 +7,8 @@ export function calculateDifferenceInTime(innitialDate: Date, laterDate: Date) {
     totalSeconds = Number(totalSeconds); 
   }
 
+  alert(`${totalSeconds} ${innitialDate} ${laterDate}`)
+
   const totalMinutes = Math.floor(totalSeconds / 60);
   const totalHours = Math.floor(totalMinutes / 60);
 
