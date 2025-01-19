@@ -11,7 +11,7 @@ export default function AboutUsController() {
 
   const handleCalculateCountdown = useCallback(() => {
     const actualDate = new Date();
-    const ourFirstDay = new Date('01-04-2024 18:30:00');
+    const ourFirstDay = new Date('2024-01-04 18:30:00');
     const { days, hours, minutes, seconds } = calculateDifferenceInTime(ourFirstDay, actualDate);
 
     setDays(days);
