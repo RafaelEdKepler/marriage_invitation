@@ -55,6 +55,10 @@ export const SpecialMenuOption = styled(MenuOption) <MenuMobileOptionType>`
       opacity: 0.9;
     }
   }
+
+  @media (max-width: 768px) {
+   display: none !important;
+  }
 `;
 
 export const MenuMobileIcon = styled.div`
