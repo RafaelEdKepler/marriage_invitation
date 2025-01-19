@@ -1,7 +1,12 @@
 import { differenceInSeconds } from "date-fns";
 
 export function calculateDifferenceInTime(innitialDate: Date, laterDate: Date) {
-  const totalSeconds = differenceInSeconds(laterDate, innitialDate);
+  let totalSeconds = differenceInSeconds(laterDate, innitialDate);
+  
+  if (typeof totalSeconds !== "number") {
+    totalSeconds = Number(totalSeconds); 
+  }
+
   const totalMinutes = Math.floor(totalSeconds / 60);
   const totalHours = Math.floor(totalMinutes / 60);
 
