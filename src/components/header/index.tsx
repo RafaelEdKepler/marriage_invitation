@@ -20,11 +20,11 @@ export default function HeaderComponent() {
     },
     {
       title: "Transmissão",
-      link: "#",
+      link: "/in-development",
     },
     {
       title: "Lista de Presentes",
-      link: "#",
+      link: "/in-development",
     },
     {
       title: "Missão: Padrinho",

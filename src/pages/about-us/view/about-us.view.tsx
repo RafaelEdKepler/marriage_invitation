@@ -1,4 +1,5 @@
 import CarouselComponent from "../../../components/carousel/carousel.component";
+import FooterComponent from "../../../components/footer";
 import HeaderComponent from "../../../components/header";
 import TextAreaComponent from "../../../components/text-area";
 import TimerComponent from "../../../components/timer/timer.component";
@@ -16,17 +17,19 @@ export default function AboutUsView({
   return (
     <>
       <HeaderComponent />
+      <FooterComponent />
       <TextAreaComponent>
+        <CarouselComponent
+          images={carouselImages}
+          onChangeSelectedImage={onChangeSelectedImage}
+          selectedImage={selectedImage}
+        />
+        <p>TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste</p>
         <TimerComponent
           days={days}
           hours={hours}
           minutes={minutes}
           seconds={seconds}
-        />
-        <CarouselComponent
-          images={carouselImages}
-          onChangeSelectedImage={onChangeSelectedImage}
-          selectedImage={selectedImage}
         />
       </TextAreaComponent>
     </>

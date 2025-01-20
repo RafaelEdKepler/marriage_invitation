@@ -10,7 +10,7 @@ export const CarouselContainer = styled.div<CarouselContainerType>`
   justify-content: flex-end;
   align-items: center;
 
-  margin-top: 2rem;
+  margin: 0.5rem;
 
   border-radius: 6px;
 
