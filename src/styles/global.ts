@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "EB Garamond", sans-serif;
     background-image: url('/casamento.gif'), url('/fundo_1.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
     display: flex;
     align-items: center;
