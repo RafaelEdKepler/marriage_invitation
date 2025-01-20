@@ -11,6 +11,8 @@ export default function AboutUsController() {
 
   const [selectedImage, setSelectedImage] = useState(0);
 
+  const { innerWidth } = window;
+
   const carouselImagesRef = useRef(["carousel_image.jpeg", "carousel_image_2.jpeg", "carousel_image_3.jpeg", "carousel_image_4.jpeg"])
 
   const handleCalculateCountdown = useCallback(() => {
@@ -48,6 +50,8 @@ export default function AboutUsController() {
     }
   }, [handleCalculateCountdown, handleChangeCarouselImage])
 
+  const isPhoneSize = innerWidth <= 768;
+
   return (
     <AboutUsView
       days={days}
@@ -57,6 +61,7 @@ export default function AboutUsController() {
       carouselImages={carouselImagesRef.current}
       onChangeSelectedImage={setSelectedImage}
       selectedImage={selectedImage}
+      isPhoneSize={isPhoneSize}
     />
   )
 }

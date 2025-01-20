@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { BulletType, CarouselContainerType } from "../types";
 
 export const CarouselContainer = styled.div<CarouselContainerType>`
-  width: 27%;
+  width: 90%;
   height: 30rem;
 
   display: flex;
@@ -17,7 +17,7 @@ export const CarouselContainer = styled.div<CarouselContainerType>`
   background-color: ${props => props.theme.colors.black};
   background-image: ${props => `url(${props.source})`};
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position-x: 50%;
   background-position-y: 25%;
   transition: 0.2s;
@@ -36,8 +36,6 @@ export const CarouselContainer = styled.div<CarouselContainerType>`
   @media (max-width: 768px) {
     width: 100%;
     height: 22rem;
-
-    background-size: cover;
 
     background-position: 50%;
   }

@@ -9,6 +9,12 @@ export const TextAndCarouselContainer = styled.div`
   }
 `;
 
+export const CarouselContainer = styled.div`
+  width: 100%;
+  display: flex;
+  margin-top: 4rem;
+`;
+
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;

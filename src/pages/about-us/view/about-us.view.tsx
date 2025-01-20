@@ -3,7 +3,7 @@ import FooterComponent from "../../../components/footer";
 import HeaderComponent from "../../../components/header";
 import TextAreaComponent from "../../../components/text-area";
 import TimerComponent from "../../../components/timer/timer.component";
-import { NamesContainer, TextAndCarouselContainer, TextContainer } from "../style/style";
+import { CarouselContainer, NamesContainer, TextAndCarouselContainer, TextContainer } from "../style/style";
 import { AboutUseViewType } from "../types";
 
 export default function AboutUsView({
@@ -13,13 +13,21 @@ export default function AboutUsView({
   seconds,
   carouselImages,
   onChangeSelectedImage,
-  selectedImage
+  selectedImage,
+  isPhoneSize
 }: AboutUseViewType) {
   return (
     <>
       <HeaderComponent />
       <FooterComponent />
       <TextAreaComponent>
+        {isPhoneSize && (
+          <CarouselComponent
+            images={carouselImages}
+            onChangeSelectedImage={onChangeSelectedImage}
+            selectedImage={selectedImage}
+          />
+        )}
         <TextAndCarouselContainer>
           <TextContainer>
             <NamesContainer>
@@ -44,11 +52,15 @@ export default function AboutUsView({
             <p>Ela, então, disse que deveriam conversar face-a-face sobre esse assunto. Mais um "encontro" marcado, para às dezoito horas do dia quatro de Janeiro do ano de 2024.</p>
             <p>Após um dia com ele sofrendo de ansiedade, chegou o tão esperado momento. O tão esperado sim, após um pedido decente. Assim, a nossa história começou.</p>
           </TextContainer>
-          <CarouselComponent
-            images={carouselImages}
-            onChangeSelectedImage={onChangeSelectedImage}
-            selectedImage={selectedImage}
-          />
+          {!isPhoneSize && (
+            <CarouselContainer>
+              <CarouselComponent
+                images={carouselImages}
+                onChangeSelectedImage={onChangeSelectedImage}
+                selectedImage={selectedImage}
+              />
+            </CarouselContainer>
+          )}
         </TextAndCarouselContainer>
         <h2>E ela já dura a:</h2>
         <TimerComponent
