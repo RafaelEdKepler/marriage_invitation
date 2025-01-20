@@ -24,13 +24,24 @@ export default function AboutUsController() {
     setSeconds(seconds);
   }, [])
 
+  const handleChangeCarouselImage = useCallback(() => {
+    if (selectedImage < carouselImagesRef.current.length) {
+      setSelectedImage(selectedImage + 1);
+    } else {
+      setSelectedImage(0);
+    }
+  }, [selectedImage, carouselImagesRef])
+
 
   useEffect(() => {
     handleCalculateCountdown()
     setInterval(() => {
       handleCalculateCountdown();
     }, 1000)
-  }, [handleCalculateCountdown])
+    setInterval(() => {
+      handleChangeCarouselImage();
+    }, 5000)
+  }, [handleCalculateCountdown, handleChangeCarouselImage])
 
   return (
     <AboutUsView
