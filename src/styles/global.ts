@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     background-image: url('/casamento.gif'), url('/fundo_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
