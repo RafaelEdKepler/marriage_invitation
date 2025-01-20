@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import SpecialInviteView from "../view/special-invite.view";
 import { useParams } from "react-router-dom";
-import { UsersAGroomsMenOrBridesMaid } from "../../../components/header/type";
+import { UsersAGroomsMenOrBridesMaid } from "../../../components/types";
 
 export default function SpecialInviteController() {
   const [invitationClicked, setInvitationClicked] = useState(false);

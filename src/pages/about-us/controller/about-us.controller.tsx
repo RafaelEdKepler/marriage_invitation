@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import AboutUsView from "../view/about-us.view";
 import { calculateDifferenceInTime } from "../../../utils/calculate-time-countdown";
 
@@ -8,6 +8,10 @@ export default function AboutUsController() {
   const [hours, setHours] = useState("00");
   const [minutes, setMinutes] = useState("00");
   const [seconds, setSeconds] = useState("00");
+
+  const [selectedImage, setSelectedImage] = useState(0);
+
+  const carouselImagesRef = useRef(["carousel_image.jpeg", "carousel_image_2.jpeg", "carousel_image_3.jpeg", "carousel_image_4.jpeg"])
 
   const handleCalculateCountdown = useCallback(() => {
     const actualDate = new Date();
@@ -34,6 +38,9 @@ export default function AboutUsController() {
       hours={hours}
       minutes={minutes}
       seconds={seconds}
+      carouselImages={carouselImagesRef.current}
+      onChangeSelectedImage={setSelectedImage}
+      selectedImage={selectedImage}
     />
   )
 }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MenuMobileOptionType, MenuMobileType } from "./type";
+import { MenuMobileOptionType, MenuMobileType } from "../types";
 
 export const HeaderContainer = styled.div`
   height: 5rem;

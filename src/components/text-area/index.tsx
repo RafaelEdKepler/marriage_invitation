@@ -1,5 +1,5 @@
+import { TextAreaType } from "../types";
 import { CenteredContent, Container, ContainerWhiteArea } from "./style";
-import { TextAreaType } from "./types";
 
 export default function TextAreaComponent({ children }: TextAreaType) {
   return (

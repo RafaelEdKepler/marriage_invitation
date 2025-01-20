@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CloseMobileMenu, HeaderContainer, MenuMobile, MenuMobileIcon, MenuMobileOption, MenuOption, SpecialMenuMobileOption, SpecialMenuOption } from "./style";
 import { List, X } from "@phosphor-icons/react"
-import { UsersAGroomsMenOrBridesMaid } from "./type";
+import { UsersAGroomsMenOrBridesMaid } from "../types";
 
 export default function HeaderComponent() {
 
@@ -10,6 +10,10 @@ export default function HeaderComponent() {
   const isUserAGroom: UsersAGroomsMenOrBridesMaid | false | "" = localStorage.getItem("@thaysa&rafael:groomsmen-mission") ? localStorage.getItem("@thaysa&rafael:groomsmen-mission") as UsersAGroomsMenOrBridesMaid : "";
 
   const menuOptions = [
+    {
+      title: "Início",
+      link: "/invitated"
+    },
     {
       title: "Sobre nós",
       link: "/about-us",
