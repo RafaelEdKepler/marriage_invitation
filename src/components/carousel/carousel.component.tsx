@@ -11,6 +11,7 @@ export default function CarouselComponent({ images, selectedImage, onChangeSelec
           <Bullet
             key={image}
             onClick={() => onChangeSelectedImage(index)}
+            selected={selectedImage === index}
           />
         ))}
       </BulletContainer>

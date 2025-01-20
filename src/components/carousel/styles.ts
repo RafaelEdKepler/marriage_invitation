@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CarouselContainerType } from "../types";
+import { BulletType, CarouselContainerType } from "../types";
 
 export const CarouselContainer = styled.div<CarouselContainerType>`
   width: 80%;
@@ -14,7 +14,7 @@ export const CarouselContainer = styled.div<CarouselContainerType>`
 
   border-radius: 6px;
 
-  background-color: #000;
+  background-color: ${props => props.theme.colors.black};
   background-image: ${props => `url(${props.source})`};
   background-repeat: no-repeat;
   background-size: contain;
@@ -35,7 +35,7 @@ export const CarouselContainer = styled.div<CarouselContainerType>`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 10rem;
+    height: 12rem;
 
     background-size: contain;
 
@@ -49,25 +49,21 @@ export const BulletContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 5rem;
-  opacity: 0.2;
-  background-color: #000;
+  opacity: 0.4;
+  background-color: ${props => props.theme.colors.black};
   gap: 0.5rem;
   transition: 0.2s;
-
-  &:hover {
-    opacity: 0.4;
-  }
 
   @media (max-width: 768px) {
     height: 2rem;
   }
 `;
 
-export const Bullet = styled.div`
+export const Bullet = styled.div<BulletType>`
   width: 2rem;
   height: 2rem;
-  background-color: #fff;
-  opacity: 0.9;
+  background-color: ${props => props.theme.colors.white};
+  opacity: ${props => props.selected ? 1 : 0.7};
   cursor: pointer;
   transition: 0.2s;
 

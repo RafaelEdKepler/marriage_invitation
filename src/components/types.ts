@@ -34,3 +34,7 @@ export interface CarouselComponentType {
   selectedImage: number;
   onChangeSelectedImage: (image: number) => void;
 }
+
+export interface BulletType {
+  selected: boolean;
+}

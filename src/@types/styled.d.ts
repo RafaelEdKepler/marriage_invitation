@@ -7,7 +7,9 @@ declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
       "invitation-red-theme": string,
-      "invitation-golden-theme": string
+      "invitation-golden-theme": string,
+      "white": string,
+      "black": string
     }
   }
 }
