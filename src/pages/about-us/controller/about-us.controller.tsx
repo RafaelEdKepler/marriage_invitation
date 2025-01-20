@@ -25,7 +25,7 @@ export default function AboutUsController() {
   }, [])
 
   const handleChangeCarouselImage = useCallback(() => {
-    if (selectedImage < carouselImagesRef.current.length) {
+    if (selectedImage < carouselImagesRef.current.length - 1) {
       setSelectedImage(selectedImage + 1);
     } else {
       setSelectedImage(0);
