@@ -83,6 +83,7 @@ export const MenuMobile = styled.div<MenuMobileType>`
   width: ${props => props.menuOpened ? "75vw" : "0"};
   background-color: ${props => props.theme.colors["invitation-red-theme"]};
   transition: 0.2s;
+  z-index: 999;
 
   div {
     display: ${props => props.menuOpened ? "flex" : "none"};

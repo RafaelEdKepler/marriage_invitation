@@ -6,6 +6,7 @@ export const TimeoutContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 1rem;
 
   @media (max-width: 430px) {
     gap: 0.25rem;

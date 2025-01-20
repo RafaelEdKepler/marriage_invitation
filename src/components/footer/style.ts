@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   height: 5rem;
   background-color: ${props => props.theme.colors["invitation-red-theme"]};
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   display: flex;

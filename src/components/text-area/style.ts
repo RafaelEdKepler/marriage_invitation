@@ -5,7 +5,7 @@ export const Container = styled.section`
   min-height: 35rem;
   display: flex;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin: 2.5rem 0 7rem 0;
 
   @media (max-width: 430px) {
     min-height: 30rem;
@@ -23,7 +23,9 @@ export const ContainerWhiteArea = styled.div`
   background-color: #fff;
   padding: 2rem;
   min-height: 60%;
-  overflow: hidden;
+  overflow-wrap: normal;
+  white-space: normal;
+  overflow-wrap: break-word;
 
   @media (max-width: 830px) {
     width: 85%;
@@ -56,6 +58,7 @@ export const CenteredContent = styled.div`
   p {
     text-align: left;
     white-space: normal;
+    margin: 0.5rem 0 0.5rem 0;
   }
 
   h2 {
