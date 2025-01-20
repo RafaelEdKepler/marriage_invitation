@@ -58,7 +58,11 @@ export const CenteredContent = styled.div`
   p {
     text-align: left;
     white-space: normal;
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.2rem 0 0.2rem 0;
+
+    @media (max-width: 768px) {
+      margin: 0.5rem 0 0.5rem 0;
+    }
   }
 
   h2 {
