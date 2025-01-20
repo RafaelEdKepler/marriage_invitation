@@ -22,9 +22,13 @@ export default function InvitatedController() {
 
   useEffect(() => {
     handleCalculateCountdown();
-    setInterval(() => {
+    const countdownInterval = setInterval(() => {
       handleCalculateCountdown();
     }, 1000)
+
+    return () => {
+      clearInterval(countdownInterval);
+    }
   }, [marriageDate, handleCalculateCountdown])
 
 

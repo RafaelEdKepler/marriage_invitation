@@ -35,12 +35,17 @@ export default function AboutUsController() {
 
   useEffect(() => {
     handleCalculateCountdown()
-    setInterval(() => {
+    const countDownTimer = setInterval(() => {
       handleCalculateCountdown();
     }, 1000)
-    setInterval(() => {
+    const imageCarrouselTimer = setInterval(() => {
       handleChangeCarouselImage();
     }, 5000)
+
+    return () => {
+      clearInterval(countDownTimer);
+      clearInterval(imageCarrouselTimer);
+    }
   }, [handleCalculateCountdown, handleChangeCarouselImage])
 
   return (
