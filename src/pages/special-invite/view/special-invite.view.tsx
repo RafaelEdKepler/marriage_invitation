@@ -14,7 +14,7 @@ export default function SpecialInviteView({ invitationShowed, invitationStatus, 
 
   useEffect(() => {
     if (name && Object.keys(namesEnum).includes(name)) {
-      specialInvitedName.current = namesEnum[name as "lucas" | "gabi" | "heloisa" | "leandro"];
+      specialInvitedName.current = namesEnum[name as "lucas" | "gabi" | "heloisa" | "leandro" | "cintia-e-bepo" | "cris-e-willy"];
     }
   }, [])
 
