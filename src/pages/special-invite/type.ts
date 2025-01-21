@@ -12,5 +12,7 @@ export enum namesEnum {
   lucas = "Lucas",
   gabi = "Gabriela",
   heloisa = "Heloisa",
-  leandro = "Leandro"
+  leandro = "Leandro",
+  cintia-e-bepo = "Cintia e Bepo",
+  cris-e-willy = "Cris e Willy"
 }
