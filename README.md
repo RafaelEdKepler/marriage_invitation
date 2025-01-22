@@ -17,9 +17,18 @@ Todos os elementos CSS de design e animação foram feitos sem bibliotecas, tamb
 
 Para instalar e rodar o projeto, se faz necessário o uso dos seguintes comandos:
 
-´npm install´ para instalar as dependências do projeto;
+```js
+npm install
+```
 
-´npm run dev´ para rodar o projeto;
+para instalar as dependências do projeto;
+
+```js
+npm run dev
+```
+
+para rodar o projeto;
+
 
 ![Imagem da tela inicial com o convite para o casamento](/public/image.png)
 
