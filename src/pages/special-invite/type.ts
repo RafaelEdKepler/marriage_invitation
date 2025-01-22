@@ -2,6 +2,7 @@ export interface SpecialInviteType {
   invitationShowed: boolean;
   invitationStatus: boolean;
   onInvitationClick: () => void;
+  specialInvitatedName: string;
 }
 
 export interface ContainerType {

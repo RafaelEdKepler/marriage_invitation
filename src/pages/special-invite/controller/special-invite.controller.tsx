@@ -1,13 +1,21 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import SpecialInviteView from "../view/special-invite.view";
 import { useParams } from "react-router-dom";
 import { UsersAGroomsMenOrBridesMaid } from "../../../components/types";
+import { namesEnum } from "../type";
 
 export default function SpecialInviteController() {
   const [invitationClicked, setInvitationClicked] = useState(false);
   const [invitationShowed, setInvitationShowed] = useState(false);
+  const specialInvitedNameRef = useRef("padrinho");
 
   const { name } = useParams();
+
+  useEffect(() => {
+    if (name && Object.keys(namesEnum).includes(name)) {
+      specialInvitedNameRef.current = namesEnum[name as "lucas" | "gabi" | "heloisa" | "leandro" | "cintia-e-bepo" | "cris-e-willy"];
+    }
+  }, [])
 
   // @ts-expect-error ts-ignore
   if (name && Object.values(UsersAGroomsMenOrBridesMaid).includes(name)) {
@@ -31,6 +39,7 @@ export default function SpecialInviteController() {
       invitationShowed={invitationShowed}
       invitationStatus={invitationClicked}
       onInvitationClick={handleClickInvitation}
+      specialInvitatedName={specialInvitedNameRef.current}
     />
   )
 }

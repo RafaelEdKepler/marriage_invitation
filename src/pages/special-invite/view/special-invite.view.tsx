@@ -1,22 +1,12 @@
-import { useParams } from "react-router-dom";
 import HeaderComponent from "../../../components/header";
 import TextAreaComponent from "../../../components/text-area";
 import { HalfSizedImg, InvitationOpened, Section } from "../../home/styles/style";
 import { InvitationContainer, VideoContainer } from "../styles/style";
-import { namesEnum, SpecialInviteType } from "../type";
-import { useEffect, useRef } from "react";
+import { SpecialInviteType } from "../type";
 
-export default function SpecialInviteView({ invitationShowed, invitationStatus, onInvitationClick }: SpecialInviteType) {
+export default function SpecialInviteView({ invitationShowed, invitationStatus, onInvitationClick, specialInvitatedName }: SpecialInviteType) {
 
   const { innerWidth } = window;
-  const specialInvitedName = useRef("padrinho");
-  const { name } = useParams();
-
-  useEffect(() => {
-    if (name && Object.keys(namesEnum).includes(name)) {
-      specialInvitedName.current = namesEnum[name as "lucas" | "gabi" | "heloisa" | "leandro" | "cintia-e-bepo" | "cris-e-willy"];
-    }
-  }, [])
 
 
   if (!invitationShowed) {
@@ -32,7 +22,7 @@ export default function SpecialInviteView({ invitationShowed, invitationStatus, 
       <InvitationContainer>
         <HeaderComponent />
         <TextAreaComponent>
-          <h1>Olá, {specialInvitedName.current}!</h1>
+          <h1>Olá, {specialInvitatedName}!</h1>
           <h2>Estamos muito felizes por ter você na nossa história!</h2>
           <p>Para isso, temos uma mensagem, junto com uma missão pra você no vídeo abaixo!</p>
           <VideoContainer>

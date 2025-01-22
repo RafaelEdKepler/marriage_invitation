@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# Esse é o site que estou desenvolvendo para o meu casamento!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto veio como uma ideia de como incluir todas as pessoas que gostaríamos no nosso casamento, mas que não poderão estar lá.
 
-Currently, two official plugins are available:
+A ideia original que justificou o desenvolvimento desse projeto, é a ideia de transmitirmos online esse momento tão especial em nossas vidas, e, com isso, deixar essas pessoas mais próximas, com um ambiente ideal pra elas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aproveitei também para praticar alguns padrões de desenvolvimento, utilizo o MVC para estruturação dele, com Controllers sendo responsáveis por toda lógica das páginas, e as views e components responsáveis apenas pela renderização em tela.
 
-## Expanding the ESLint configuration
+Também, tentei ao máximo utilizar a menor quantidade possíveis de bibliotecas. Utilizando as seguintes nesse desenvolvimento:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React.JS - Biblioteca de desenvolvimento utilizada;
+- Phosphor-icons - Biblioteca de ícones;
+- Date-fns - Biblioteca para manipulação de datas;
+- Styled-components - Biblioteca para uso de css-in-js.
 
-- Configure the top-level `parserOptions` property like this:
+Todos os elementos CSS de design e animação foram feitos sem bibliotecas, também como parte de um desafio próprio.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Para instalar e rodar o projeto, se faz necessário o uso dos seguintes comandos:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+´npm install´ para instalar as dependências do projeto;
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+´npm run dev´ para rodar o projeto;
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![Imagem da tela inicial com o convite para o casamento](/public/image.png)
+
+Ao abrir o site, se deparará com essa tela. Onde é necessário que o usuário clique no convite, que irá redirecionar para o site.
