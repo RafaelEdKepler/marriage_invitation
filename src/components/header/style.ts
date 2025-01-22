@@ -111,6 +111,7 @@ export const MenuMobileOption = styled(MenuOption)`
   @media (max-width: 768px) {
     display: flex;
     text-transform: uppercase;
+    font-size: 1rem;
   }
 `;
 
