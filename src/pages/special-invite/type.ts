@@ -3,6 +3,7 @@ export interface SpecialInviteType {
   invitationStatus: boolean;
   onInvitationClick: () => void;
   specialInvitatedName: string;
+  paramName: string;
 }
 
 export interface ContainerType {
@@ -14,6 +15,11 @@ export enum namesEnum {
   gabi = "Gabriela",
   heloisa = "Heloisa",
   leandro = "Leandro",
+  "cintia-e-bepo" = "Cintia e Bepo",
+  "cris-e-willy" = "Cris e Willy"
+}
+
+export enum fathersInLawEnum {
   "cintia-e-bepo" = "Cintia e Bepo",
   "cris-e-willy" = "Cris e Willy"
 }

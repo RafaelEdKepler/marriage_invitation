@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
   height: 5rem;
   display: flex;
   background-color: ${props => props.theme.colors["invitation-red-theme"]};
-  background-image: url("coracao.png");
+  background-image: url("/coracao.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -110,6 +110,7 @@ export const MenuMobileOption = styled(MenuOption)`
 
   @media (max-width: 768px) {
     display: flex;
+    text-transform: uppercase;
   }
 `;
 
