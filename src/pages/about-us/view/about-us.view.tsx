@@ -62,7 +62,7 @@ export default function AboutUsView({
             </CarouselContainer>
           )}
         </TextAndCarouselContainer>
-        <h2>E ela já dura a:</h2>
+        <h2>E ela já dura há:</h2>
         <TimerComponent
           days={days}
           hours={hours}
