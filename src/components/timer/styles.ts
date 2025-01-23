@@ -35,9 +35,13 @@ export const NumberContainer = styled.div<NumberContainerType>`
     @media (max-height: 650px) {
       font-size: 3rem;
     }
+
+    @media (min-width: 1000px) and (max-height: 700px) {
+      font-size: 5.5rem;
+    }
   }
 
-  @media (max-height: 650px) {
+  @media (max-height: 650px) and (max-width: 768px) {
     width: ${props => props.colon ? "0.5rem" : "2rem"};
     height: 5rem;
     padding-bottom: ${props => props.colon ? "0.5rem" : "0"};
@@ -47,6 +51,13 @@ export const NumberContainer = styled.div<NumberContainerType>`
   @media (max-width: 430px) {
     width: ${props => props.colon ? "0.5rem" : "2rem"};
     height: 4rem;
+    padding-bottom: ${props => props.colon ? "0.5rem" : "0"};
+    display: ${props => props.seconds ? "none" : "flex"};
+  }
+
+  @media (min-width: 1000px) and (max-height: 700px) {
+    width: ${props => props.colon ? "0.5rem" : "3rem"};
+    height: 7rem;
     padding-bottom: ${props => props.colon ? "0.5rem" : "0"};
     display: ${props => props.seconds ? "none" : "flex"};
   }

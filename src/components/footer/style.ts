@@ -14,6 +14,10 @@ export const Container = styled.div`
   padding: 0.25rem;
   color: ${props => props.theme.colors["invitation-golden-theme"]};
   flex-direction: row;
+
+  @media (min-width: 1000px) and (max-height: 700px) {
+    height: 3rem;
+  }
 `;
 
 export const OnlyTitleContainer = styled.div`
@@ -30,6 +34,10 @@ export const OnlyTitleContainer = styled.div`
 
     @media (max-width: 430px) {
       font-size: 20px;
+    }
+
+    @media (min-width: 1000px) and (max-height: 700px) {
+      font-size: 1.25rem;
     }
   }
 
@@ -72,6 +80,10 @@ export const SocialMediaContainer = styled(OnlyTitleContainer)`
 
       @media (max-width: 430px) {
         font-size: 14px;
+      }
+
+      @media (min-width: 1000px) and (max-height: 700px) {
+        font-size: 1rem;
       }
     }
   }

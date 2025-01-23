@@ -21,7 +21,7 @@ export const CarouselContainer = styled.div<CarouselContainerType>`
   background-position-x: 50%;
   background-position-y: 25%;
   transition: 0.2s;
-  animation: imageTransition 2s;
+  animation: ${props => props.source ? 'imageTransition 2s' : ''};
 
   @keyframes imageTransition {
     0% {
