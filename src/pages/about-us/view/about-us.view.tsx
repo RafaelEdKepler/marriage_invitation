@@ -7,14 +7,11 @@ import { CarouselContainer, NamesContainer, TextAndCarouselContainer, TextContai
 import { AboutUseViewType } from "../types";
 
 export default function AboutUsView({
-  days,
-  hours,
-  minutes,
-  seconds,
   carouselImages,
   onChangeSelectedImage,
   selectedImage,
-  isPhoneSize
+  isPhoneSize,
+  ourFirstDay
 }: AboutUseViewType) {
   return (
     <>
@@ -64,10 +61,8 @@ export default function AboutUsView({
         </TextAndCarouselContainer>
         <h2>E ela já dura há:</h2>
         <TimerComponent
-          days={days}
-          hours={hours}
-          minutes={minutes}
-          seconds={seconds}
+          date={ourFirstDay}
+          type="up"
         />
         <h2>E durará para todo o sempre!</h2>
       </TextAreaComponent>

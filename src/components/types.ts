@@ -38,3 +38,8 @@ export interface CarouselComponentType {
 export interface BulletType {
   selected: boolean;
 }
+
+export interface TimerType {
+  date: Date,
+  type: "up" | "down"
+}

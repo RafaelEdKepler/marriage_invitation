@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100vw;
   min-height: 35rem;
+  max-height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   margin: 2.5rem 0 7rem 0;
@@ -20,9 +23,10 @@ export const Container = styled.section`
 
 export const ContainerWhiteArea = styled.div`
   width: 75%;
+  height: 100%;
   background-color: #fff;
+  border-radius: 6px;
   padding: 2rem;
-  min-height: 60%;
   overflow-wrap: normal;
   white-space: normal;
   overflow-wrap: break-word;

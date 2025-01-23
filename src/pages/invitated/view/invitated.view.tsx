@@ -4,7 +4,7 @@ import TextAreaComponent from "../../../components/text-area";
 import TimerComponent from "../../../components/timer/timer.component";
 import { InvitatedType } from "../types";
 
-export default function InvitatedView({ days, hours, minutes, seconds }: InvitatedType) {
+export default function InvitatedView({ marriageDate }: InvitatedType) {
   return (
     <>
       <HeaderComponent />
@@ -14,10 +14,8 @@ export default function InvitatedView({ days, hours, minutes, seconds }: Invitat
         <img alt="Imagem de um coração com a data 21/05/2025 dentro, contorno avermelhado e na base duas alianças se encontrando." src="/save-the-date.png" />
         <h1>SAVE THE DATE</h1>
         <TimerComponent
-          days={days}
-          hours={hours}
-          minutes={minutes}
-          seconds={seconds}
+          date={marriageDate}
+          type="down"
         />
       </TextAreaComponent>
       <FooterComponent />

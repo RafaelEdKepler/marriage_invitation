@@ -1,52 +1,73 @@
-import { InvitatedType } from "../../pages/invitated/types";
+import { useCallback, useEffect, useState } from "react";
 import { NumberContainer, TimeoutContainer } from "./styles";
+import { calculateDifferenceInTime } from "../../utils/calculate-time-countdown";
+import { TimerType } from "../types";
 
 
-export default function TimerComponent({ days, hours, minutes, seconds }: InvitatedType) {
+export default function TimerComponent({ date, type }: TimerType) {
 
-  days = days.length < 2 ? `0${days}` : days;
-  days = days.length < 3 ? `0${days}` : days;
-  hours = hours.length < 2 ? `0${hours}` : hours;
-  minutes = minutes.length < 2 ? `0${minutes}` : minutes;
-  seconds = seconds.length < 2 ? `0${seconds}` : seconds;
+  const [timerDays, setTimerDays] = useState("00");
+  const [timerHours, setTimerHours] = useState("00");
+  const [timerMinutes, setTimerMinutes] = useState("00");
+  const [timerSeconds, setTimerSeconds] = useState("00");
+
+  const handleCalculateCountdown = useCallback(() => {
+    const { days, hours, minutes, seconds } = type === "up" ? calculateDifferenceInTime(date, new Date()) : calculateDifferenceInTime(new Date(), date);
+
+    setTimerDays(days.length < 2 ? `0${days}` : days);
+    setTimerDays(days.length < 3 ? `0${days}` : days);
+    setTimerHours(hours.length < 2 ? `0${hours}` : hours);
+    setTimerMinutes(minutes.length < 2 ? `0${minutes}` : minutes);
+    setTimerSeconds(seconds.length < 2 ? `0${seconds}` : seconds);
+  }, [date, type])
+
+  useEffect(() => {
+    handleCalculateCountdown()
+    const countDownTimer = setInterval(() => {
+      handleCalculateCountdown();
+    }, 1000)
+    return () => {
+      clearInterval(countDownTimer);
+    }
+  }, [handleCalculateCountdown])
 
   return (
     <TimeoutContainer>
       <NumberContainer>
-        <span>{days[0]}</span>
+        <span>{timerDays[0]}</span>
       </NumberContainer>
       <NumberContainer>
-        <span>{days[1]}</span>
+        <span>{timerDays[1]}</span>
       </NumberContainer>
       <NumberContainer>
-        <span>{days[2]}</span>
+        <span>{timerDays[2]}</span>
       </NumberContainer>
       <NumberContainer colon="true">
         <span>:</span>
       </NumberContainer>
       <NumberContainer>
-        <span>{hours[0]}</span>
+        <span>{timerHours[0]}</span>
       </NumberContainer>
       <NumberContainer>
-        <span>{hours[1]}</span>
+        <span>{timerHours[1]}</span>
       </NumberContainer>
       <NumberContainer colon="true">
         <span>:</span>
       </NumberContainer>
       <NumberContainer>
-        <span>{minutes[0]}</span>
+        <span>{timerMinutes[0]}</span>
       </NumberContainer>
       <NumberContainer>
-        <span>{minutes[1]}</span>
+        <span>{timerMinutes[1]}</span>
       </NumberContainer>
       <NumberContainer colon="true" seconds="true">
         <span>:</span>
       </NumberContainer>
       <NumberContainer seconds="true">
-        <span>{seconds[0]}</span>
+        <span>{timerSeconds[0]}</span>
       </NumberContainer>
       <NumberContainer seconds="true">
-        <span>{seconds[1]}</span>
+        <span>{timerSeconds[1]}</span>
       </NumberContainer>
     </TimeoutContainer>
   )
