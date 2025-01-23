@@ -36,9 +36,9 @@ export default function AboutUsView({
             <p>Tudo começou com um inocente pedido: Vamos montar lego?</p>
             <p>Ela era missionária da igreja. Ele, um líder do grupo de jovens. Ambos gostavam de Harry Potter e de jogos.</p>
             <p>Então ele pensou: O que poderia unir tudo isso? A resposta foi: lego de Harry Potter.</p>
-            <p>Não era necessariamente um jogo, mas era próximo o bastante, ele pensou. Ela aceitou.</p>
+            <p>Não era necessariamente um jogo, mas era próximo o bastante, ele pensou. Ela aceitou, já desconfiada das intenções dele.</p>
             <p>Após um único "encontro", ele já sabia, estava apaixonado. Mas ele ainda tinha coisas a considerar. Tinha medo da rejeição. "E se fosse cedo demais?" ele pensava.
-              Isso ocorreu durante as férias dela. Foram duas semanas onde ele pensou, pensou e pensou mais um pouco.
+              Isso ocorreu durante as férias dela. Foram duas semanas onde ele pensou, pensou e pensou mais um pouco. Ela também foi para as férias e pensou, conversou com amigas, pediu conselhos.
             </p>
             <p>
               Então, ele decidiu. Compraria mais um lego. Faria mais um encontro. Diria tudo aquilo que sente.
