@@ -42,7 +42,7 @@ export const CenteredContent = styled.div`
 
   img {
     margin-top: 1rem;
-    width: 25%;
+    width: 30%;
     height: 25%;
 
     @media (max-width: 430px) {
@@ -56,8 +56,7 @@ export const CenteredContent = styled.div`
   }
 
   p {
-    text-align: left;
-    white-space: normal;
+    text-align: justify;
     margin: 0.2rem 0 0.2rem 0;
 
     @media (max-width: 768px) {
