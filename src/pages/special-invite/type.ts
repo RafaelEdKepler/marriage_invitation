@@ -4,6 +4,7 @@ export interface SpecialInviteType {
   onInvitationClick: () => void;
   specialInvitatedName: string;
   paramName: string;
+  videoLink: string;
 }
 
 export interface ContainerType {
