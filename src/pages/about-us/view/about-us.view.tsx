@@ -41,7 +41,7 @@ export default function AboutUsView({
               Então, ele decidiu. Compraria mais um lego. Faria mais um encontro. Diria tudo aquilo que sente.
             </p>
             <p>
-              Mas ele não disse. Ela retornou das férias, o lego foi, mais um vez montado. Horas de conversa, montagem de lego, indicação de séries e filmes. O momento era o melhor possível. Mas ele se amedrontou.
+              Mas ele não disse. Ela retornou das férias, o lego foi, mais uma vez montado. Horas de conversa, montagem de lego, indicação de séries e filmes. O momento era o melhor possível. Mas ele se amedrontou.
             </p>
             <p>Chegando em casa às três horas da manhã, arrependido pela própria covardia, mandou uma mensagem. Falando aquilo que sentia. Disse que gostava dela, que se sentia bem junto de sua presença e que esperava que ela sentisse o mesmo.</p>
             <p>A resposta veio no outro dia de manhã. O tão esperado retorno. Ela também gostava dele.</p>
