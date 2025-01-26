@@ -18,7 +18,7 @@ export default function FooterComponent() {
       </OnlyTitleContainer>
       <SpotifyContainer>
         <span>Ouça nossa playlist!</span>
-        <SpotifyLogo onClick={() => window.location.assign("https://open.spotify.com/playlist/15yr5GJ8pHBfWL0Svtb32Q?si=0ac45ab5dddd4963")} />
+        <SpotifyLogo onClick={() => window.location.assign("https://open.spotify.com/playlist/7qIhKSZ7UGMDR7chW5awMl?si=aB0QfLBzQUaLToFBe-kPwQ&pi=FlfNRnetTQWnz")} />
       </SpotifyContainer>
     </Container>
   )
