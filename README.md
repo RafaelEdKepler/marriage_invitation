@@ -1,35 +1,51 @@
-# Esse é o site que estou desenvolvendo para o meu casamento!
+<h1 align="center">💒 Wedding Website</h1> <p align="center"> A special project made with love — so our friends and family can be part of our wedding, even from afar. </p> <p align="center"> <img src="https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&style=for-the-badge" /> <img src="https://img.shields.io/badge/Styled--Components-%23db7093?style=for-the-badge&logo=styled-components" /> <img src="https://img.shields.io/badge/Live%20Streaming-Enabled-FF69B4?style=for-the-badge&logo=livewire" /> </p>
 
-Esse projeto veio como uma ideia de como incluir todas as pessoas que gostaríamos no nosso casamento, mas que não poderão estar lá.
+✨ About the Project
+This website was created as a way to bring together the people we love, even if they can’t be physically present at our wedding.
 
-A ideia original que justificou o desenvolvimento desse projeto, é a ideia de transmitirmos online esse momento tão especial em nossas vidas, e, com isso, deixar essas pessoas mais próximas, com um ambiente ideal pra elas.
+The main idea is to provide a live stream of our special day, creating a cozy and interactive environment for everyone watching from a distance.
 
-Aproveitei também para praticar alguns padrões de desenvolvimento, utilizo o MVC para estruturação dele, com Controllers sendo responsáveis por toda lógica das páginas, e as views e components responsáveis apenas pela renderização em tela.
+Along the way, I also took the opportunity to challenge myself technically and explore clean architecture and design patterns.
 
-Também, tentei ao máximo utilizar a menor quantidade possíveis de bibliotecas. Utilizando as seguintes nesse desenvolvimento:
+📐 Architecture
+Based on the MVC pattern:
 
-- React.JS - Biblioteca de desenvolvimento utilizada;
-- Phosphor-icons - Biblioteca de ícones;
-- Date-fns - Biblioteca para manipulação de datas;
-- Styled-components - Biblioteca para uso de css-in-js.
+Controllers: Handle all logic and behavior.
 
-Todos os elementos CSS de design e animação foram feitos sem bibliotecas, também como parte de um desafio próprio.
+Views/Components: Focused on screen rendering only.
 
-Para instalar e rodar o projeto, se faz necessário o uso dos seguintes comandos:
+⚙️ Tech Stack
+Tool	Purpose
+React.JS	UI library
+Phosphor Icons	Icon library
+Date-fns	Lightweight date manipulation
+Styled-components	CSS-in-JS styling
+💡 All design elements and animations were crafted from scratch without any UI libraries, as a personal CSS challenge.
+
+🖥️ Preview
+
+🎉 Invitation Landing Page
+
+When visitors open the site, they’ll be greeted with this screen:
+
+![Imagem da tela inicial com o convite para o casamento](/public/image.png)
+
+📩 Clicking the invitation leads them to the full wedding experience.
+
+To initiate the project, you need to:
 
 ```js
 npm install
 ```
 
-para instalar as dependências do projeto;
+Install all the dependencies and:
 
 ```js
 npm run dev
 ```
 
-para rodar o projeto;
+Run the project 🎉
 
-
-![Imagem da tela inicial com o convite para o casamento](/public/image.png)
-
-Ao abrir o site, se deparará com essa tela. Onde é necessário que o usuário clique no convite, que irá redirecionar para o site.
+💌 Final Words
+This project means a lot to us, and building it made this special moment even more memorable.
+We hope everyone feels closer to us, no matter the distance. ❤️
