@@ -1,16 +1,17 @@
-import { differenceInSeconds } from "date-fns";
+import { addMonths, differenceInDays, addDays, differenceInHours, addHours, differenceInMonths } from "date-fns";
 
-export function calculateDifferenceInTime(innitialDate: Date, laterDate: Date) {
-  const totalSeconds = differenceInSeconds(laterDate, innitialDate);
-  const totalMinutes = Math.floor(totalSeconds / 60);
-  const totalHours = Math.floor(totalMinutes / 60);
-
-  const days = String(Math.floor(totalHours / 24));
-  const seconds = String(Math.floor(totalSeconds % 60));
-  const minutes = String(Math.floor(totalMinutes % 60));
-  const hours = String(Math.floor(totalHours % 24));
+export function calculateDifferenceInTime(initialDate: Date, laterDate: Date) {
+  let calculateDate = initialDate;
+  const months = differenceInMonths(laterDate, calculateDate);
+  calculateDate = addMonths(calculateDate, months);
+  const days = differenceInDays(laterDate, calculateDate);
+  calculateDate = addDays(calculateDate, days);
+  const hours = differenceInHours(laterDate, calculateDate);
+  calculateDate = addHours(calculateDate, hours);
 
   return {
-    days, seconds, minutes, hours
+    months: String(months).length < 2 ? `0${months}` : `${months}`,
+    days: String(days).length < 2 ? `0${days}` : `${days}`,
+    hours: String(hours).length < 2 ? `0${hours}` : `${days}`,
   }
 }

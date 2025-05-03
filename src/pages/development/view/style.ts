@@ -3,8 +3,16 @@ import { ContainerWhiteArea } from "../../../components/text-area/style"
 
 
 export const ContainerWhiteAreaDevelopment = styled(ContainerWhiteArea)`
-  background-image: url('/in-development.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    height: auto;
+
+    img {
+      height: 55%;
+      width: 100%;
+    }
+  }
 `;
