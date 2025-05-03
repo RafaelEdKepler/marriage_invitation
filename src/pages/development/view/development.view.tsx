@@ -10,7 +10,9 @@ export default function DevelopmentView() {
     <>
       <HeaderComponent />
       <Container>
-        <ContainerWhiteAreaDevelopment />
+        <ContainerWhiteAreaDevelopment>
+          <img src="/in-development.png" />
+        </ContainerWhiteAreaDevelopment>
       </Container>
       <FooterComponent />
     </>

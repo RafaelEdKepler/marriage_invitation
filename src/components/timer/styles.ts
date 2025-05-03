@@ -6,7 +6,7 @@ export const TimeoutContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0.5rem ;
 
   @media (max-width: 430px) {
     gap: 0.25rem;
@@ -22,7 +22,6 @@ export const NumberContainer = styled.div<NumberContainerType>`
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  padding-bottom: ${props => props.colon ? "2.5rem" : "0.5rem"};
 
   span {
     font-size: 10rem;
@@ -44,21 +43,29 @@ export const NumberContainer = styled.div<NumberContainerType>`
   @media (max-height: 650px) and (max-width: 768px) {
     width: ${props => props.colon ? "0.5rem" : "2rem"};
     height: 5rem;
-    padding-bottom: ${props => props.colon ? "0.5rem" : "0"};
     display: ${props => props.seconds ? "none" : "flex"};
   }
 
   @media (max-width: 430px) {
     width: ${props => props.colon ? "0.5rem" : "2rem"};
     height: 4rem;
-    padding-bottom: ${props => props.colon ? "0.5rem" : "0"};
     display: ${props => props.seconds ? "none" : "flex"};
   }
 
   @media (min-width: 1000px) and (max-height: 700px) {
     width: ${props => props.colon ? "0.5rem" : "3rem"};
     height: 7rem;
-    padding-bottom: ${props => props.colon ? "0.5rem" : "0"};
     display: ${props => props.seconds ? "none" : "flex"};
   }
 `;
+
+export const LetterContainer = styled(NumberContainer)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  span {
+    font-size: 1rem;
+  }
+`

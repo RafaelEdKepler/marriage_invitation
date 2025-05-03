@@ -4,6 +4,7 @@ import Invitated from "./pages/invitated";
 import SpecialInvite from "./pages/special-invite";
 import AboutUs from "./pages/about-us";
 import Development from "./pages/development";
+import PresentsList from "./pages/presents-list";
 
 
 export default function Router() {
@@ -14,6 +15,7 @@ export default function Router() {
       <Route path="/special-invite/:name" element={<SpecialInvite />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/in-development" element={<Development />} />
+      <Route path="/presents-list" element={<PresentsList />} />
     </Routes>
   )
 }
