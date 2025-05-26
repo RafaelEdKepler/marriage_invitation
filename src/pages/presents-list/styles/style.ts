@@ -15,9 +15,11 @@ export const DescriptionContainer = styled.div`
   display: flex;
   margin: 1rem 0;
 
-  @media (max-width: 768px) {
+ /*
+ @media (max-width: 768px) {
     display: none;
   }
+*/
 `;
 
 export const PresentContainer = styled.div`
