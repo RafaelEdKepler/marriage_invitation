@@ -15,7 +15,7 @@ export default function Router() {
       <Route path="/special-invite/:name" element={<SpecialInvite />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/in-development" element={<Development />} />
-      <Route path="/presents-list" element={<PresentsList />} />
+      <Route path="/gifts-list" element={<PresentsList />} />
     </Routes>
   )
 }

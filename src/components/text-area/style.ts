@@ -44,17 +44,6 @@ export const CenteredContent = styled.div`
   align-items: center;
   white-space: normal;
 
-  img {
-    margin-top: 1rem;
-    width: 30%;
-    height: 25%;
-
-    @media (max-width: 430px) {
-      width: 60%;
-      height: 60%;
-    }
-  }
-
   span {
     font-size: 1rem;
   }

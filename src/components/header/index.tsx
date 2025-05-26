@@ -24,7 +24,7 @@ export default function HeaderComponent() {
     },
     {
       title: "Lista de Presentes",
-      link: "/in-development",
+      link: "/gifts-list",
     },
     {
       title: "Missão: Padrinho",
