@@ -11,12 +11,21 @@ export const PresentListContainer = styled.div`
   overflow: hidden;
 `
 
+export const DescriptionContainer = styled.div`
+  display: flex;
+  margin: 1rem 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
 export const PresentContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
