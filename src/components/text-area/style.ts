@@ -37,6 +37,7 @@ export const ContainerWhiteArea = styled.div`
 `;
 
 export const CenteredContent = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
