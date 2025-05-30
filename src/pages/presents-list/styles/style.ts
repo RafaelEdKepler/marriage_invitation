@@ -13,11 +13,11 @@ export const PresentListContainer = styled.div`
 
 export const DescriptionContainer = styled.div`
   display: flex;
+  flex-direction: column;
   margin: 1rem 0;
 
-
- @media (max-width: 768px) {
-    display: none;
+  @media (max-width: 768px) {
+    /* display: none; */
   }
 `;
 
@@ -32,3 +32,28 @@ export const PresentContainer = styled.div`
     grid-template-columns: 1fr;
   }
 `
+
+export const QrCodeContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: ${props => props.theme.colors["invitation-red-theme"]};
+    border-radius: 9px;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+`;
