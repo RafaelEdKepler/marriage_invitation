@@ -38,6 +38,7 @@ export const QrCodeContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 2.5rem;
 
   div {
     display: flex;
