@@ -1,5 +1,7 @@
 export interface PresentsListViewProps {
-  presentsList: Array<PresentsListProps>
+  presentsList: Array<PresentsListProps>;
+  showPopup: boolean;
+  onClickQrCode: VoidFunction;
 }
 
 export interface PresentsListProps {

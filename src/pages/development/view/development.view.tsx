@@ -1,6 +1,6 @@
 
-import FooterComponent from "../../../components/footer";
-import HeaderComponent from "../../../components/header";
+import FooterComponent from "../../../components/footer/index.component";
+import HeaderComponent from "../../../components/header/index.component";
 import { Container } from "../../../components/text-area/style";
 import { ContainerWhiteAreaDevelopment } from "./style";
 

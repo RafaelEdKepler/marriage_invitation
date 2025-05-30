@@ -36,6 +36,14 @@ export const NamesContainer = styled.div`
   margin-bottom: 1rem;
 
   img {
+    margin-top: 1rem;
     min-height: 2.5rem;
+    width: 30%;
+    height: 25%;
+
+    @media (max-width: 430px) {
+      width: 60%;
+      height: 60%;
+    }
   }
 `;

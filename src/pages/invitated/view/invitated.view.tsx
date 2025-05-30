@@ -1,6 +1,6 @@
-import FooterComponent from "../../../components/footer";
-import HeaderComponent from "../../../components/header/";
-import TextAreaComponent from "../../../components/text-area";
+import FooterComponent from "../../../components/footer/index.component";
+import HeaderComponent from "../../../components/header/index.component";
+import TextAreaComponent from "../../../components/text-area/index.component";
 import TimerComponent from "../../../components/timer/timer.component";
 import { HeartImage } from "../styles/style";
 import { InvitatedType } from "../types";

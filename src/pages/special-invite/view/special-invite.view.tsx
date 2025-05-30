@@ -1,5 +1,5 @@
-import HeaderComponent from "../../../components/header";
-import TextAreaComponent from "../../../components/text-area";
+import HeaderComponent from "../../../components/header/index.component";
+import TextAreaComponent from "../../../components/text-area/index.component";
 import { HalfSizedImg, InvitationOpened, Section } from "../../home/styles/style";
 import { InvitationContainer, VideoContainer } from "../styles/style";
 import { fathersInLawEnum, SpecialInviteType } from "../type";
