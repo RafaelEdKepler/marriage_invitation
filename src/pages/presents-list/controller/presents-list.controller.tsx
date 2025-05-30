@@ -8,7 +8,7 @@ export default function PresentsListController() {
 
   const handleOnClickQrCode = useCallback(async () => {
     setShowpopup(true);
-    setTimeout(() => setShowpopup(false), 1000);
+    setTimeout(() => setShowpopup(false), 2000);
   }, [])
 
   return (

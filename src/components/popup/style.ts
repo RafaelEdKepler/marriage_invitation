@@ -18,7 +18,7 @@ export const PopupContainer = styled.section`
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
-    animation: opacity 1.5s;
+    animation: opacity 2.5s;
 
     span {
       font-size: 1rem;
