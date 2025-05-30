@@ -30,7 +30,7 @@ export const PopupContainer = styled.section`
         opacity: 0.9;
     }
     100% {
-        opacity: 0.3;
+        opacity: 0;
     }
   }
 `;
