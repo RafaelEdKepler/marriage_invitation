@@ -12,10 +12,14 @@ export const PresentCardContainer = styled.div<PresentCardContainerProps>`
   border-radius: 9px;
   outline: 1px solid ${props => props.theme.colors["invitation-red-theme"]};
   max-width: 25rem;
-  min-height: ${props => props.open ? '10' : '5rem'};
+  height: ${props => !props.open ? '15rem' : 'auto'};
+  min-height: ${props => props.open ? '10rem' : 'auto'};
   border-color: ${props => props.theme.colors["invitation-red-theme"]};
   padding: 1rem;
   gap: 1rem;
+  transition: 0.2s;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   h2 {
     font-size: 2rem;
