@@ -12,7 +12,8 @@ export const presentsList = [
   {
     name: "Aposentar a Brastemp",
     description: "Essa aqui é guerreira, a Thaysa já é a terceira dona. Ela continua fazendo muito bem o seu trabalho, mas já foi reparada algumas vezes e na próxima vez que estragar não compensará consertar. Como ela fica no banheiro e temos pouco espaço, já iremos comprar uma que lava e seca, pois não temos secadora.",
-    photo: "lavaroupas.jpeg",
+    photo: "lavaroupas_nova.png",
+    oldPhoto: "lavaroupas.jpeg",
   },
   {
     name: "Jogo de mesa e cadeiras",
@@ -22,7 +23,8 @@ export const presentsList = [
   {
     name: "Robô escravo",
     description: "Quem sabe para você este item estaria no final da lista de prioridades, mas como a nossa Golden perde muito pelos (como a foto comprova, esse é o monte que varremos todos os dias), e para piorar temos o barro vermelho do sul por aqui, o piso claro agradeceria muito uma limpeza mais constante. Logo, este aqui já está na lista de necessidades!",
-    photo: "robo.jpeg"
+    photo: "robo.jpeg",
+    oldPhoto: "pelos.jpeg"
   },
   {
     name: "Guarda-roupas",
@@ -37,12 +39,14 @@ export const presentsList = [
   {
     name: "Fogão",
     description: "O nosso já está bem velhinho, e o forno vaza bastante gás (tanto que evitamos usar), e como a nossa realidade é mudar com frequência de casa/cidade, geralmente não conseguirmos deixar o fogão num local bom na cozinha para se adequar à mangueira de gás já instalada. O local atual é muito ruim, não conseguimos deixar a janela aberta e cozinhar ao mesmo tempo!",
-    photo: "fogao.jpeg"
+    photo: "fogao_novo.jpg",
+    oldPhoto: "fogao.jpeg"
   },
   {
     name: "Geladeira",
     description: "Essa geladeira foi comprada pela Thaysa no início da faculdade, e para ela já era pequena, além do freezer que é minúsculo. ",
-    photo: "geladeira.jpeg",
+    photo: "geladeira_nova.jpg",
+    oldPhoto: "geladeira.jpeg",
   },
   {
     name: "Colchão",

@@ -21,7 +21,8 @@ export const PopupContainer = styled.section`
     animation: opacity 2.5s;
 
     span {
-      font-size: 1rem;
+      font-size: 0.75rem;
+      font-family: sans-serif;
     }
   }
 

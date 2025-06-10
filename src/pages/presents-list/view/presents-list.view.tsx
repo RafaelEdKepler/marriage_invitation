@@ -7,7 +7,7 @@ import { DescriptionContainer, PresentContainer, QrCodeContainer } from "../styl
 import { PresentsListViewProps } from "../types";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-export default function PresentsListView({ presentsList, onClickQrCode, showPopup }: PresentsListViewProps) {
+export default function PresentsListView({ presentsList, onClickQrCode, showPopup, onGiftPress }: PresentsListViewProps) {
 
   return (
     <>
@@ -22,16 +22,17 @@ export default function PresentsListView({ presentsList, onClickQrCode, showPopu
             <span>Não queremos apenas pedir dinheiro de presente, mas que você conheça nossos sonhos e planos e, se você assim desejar, nos ajudar a alcançá-los.</span>
           </p>
         </DescriptionContainer>
-        <PresentContainer>
-          {presentsList.map((present) => (
-            <PresentCardComponent
-              key={present.name}
-              description={present.description}
-              name={present.name}
-              photo={present.photo}
-            />
-          ))}
-        </PresentContainer>
+        {presentsList && (
+          <PresentContainer>
+            {presentsList.map((present) => (
+              <PresentCardComponent
+                onPressPresent={onGiftPress}
+                present={present}
+                key={present.name}
+              />
+            ))}
+          </PresentContainer>
+        )}
         <DescriptionContainer>
           <p>
             <span>O qrcode para todos os presentes encontra-se abaixo, que irá direcionar para a conta bancária do Rafa, mas pedimos que quando fizeres o pix, coloque na descrição para qual presente você gostaria de colaborar. Conforme formos comprando, queremos poder agradecer de forma especial a quem ajudou.</span>

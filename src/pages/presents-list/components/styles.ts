@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const PresentCardContainer = styled.div`
+interface PresentCardContainerProps {
+  open?: boolean;
+}
+
+export const PresentCardContainer = styled.div<PresentCardContainerProps>`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8,6 +12,7 @@ export const PresentCardContainer = styled.div`
   border-radius: 9px;
   outline: 1px solid ${props => props.theme.colors["invitation-red-theme"]};
   max-width: 25rem;
+  min-height: ${props => props.open ? '10' : '5rem'};
   border-color: ${props => props.theme.colors["invitation-red-theme"]};
   padding: 1rem;
   gap: 1rem;
@@ -18,6 +23,7 @@ export const PresentCardContainer = styled.div`
   }
 
   span {
+    display: ${props => props.open ? "block" : "none"};
     font-size: 1rem;
     color: ${props => props.theme.colors["invitation-red-theme"]};
   }
