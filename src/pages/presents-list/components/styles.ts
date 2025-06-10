@@ -12,7 +12,6 @@ export const PresentCardContainer = styled.div<PresentCardContainerProps>`
   border-radius: 9px;
   outline: 1px solid ${props => props.theme.colors["invitation-red-theme"]};
   max-width: 25rem;
-  height: ${props => !props.open ? '15rem' : 'auto'};
   max-height: ${props => props.open ? '1000rem' : '15rem'};
   border-color: ${props => props.theme.colors["invitation-red-theme"]};
   padding: 1rem;
