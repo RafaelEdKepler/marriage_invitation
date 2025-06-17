@@ -7,7 +7,8 @@ export const presentsList = [
   {
     name: "Trocar o Uno",
     description: "O uninho nos leva para muitos lugares dentro da cidade, não seria algo tão emergencial, mas como viajamos muito até Santa Catarina, precisamos de um carro mais seguro. ",
-    photo: "carro-completo.jpeg"
+    photo: "carro-completo.jpeg",
+    oldPhoto: "uno.jpeg"
   },
   {
     name: "Aposentar a Brastemp",
@@ -39,7 +40,7 @@ export const presentsList = [
   {
     name: "Fogão",
     description: "O nosso já está bem velhinho, e o forno vaza bastante gás (tanto que evitamos usar), e como a nossa realidade é mudar com frequência de casa/cidade, geralmente não conseguirmos deixar o fogão num local bom na cozinha para se adequar à mangueira de gás já instalada. O local atual é muito ruim, não conseguimos deixar a janela aberta e cozinhar ao mesmo tempo!",
-    photo: "fogao_novo.jpg",
+    photo: "fogao_novo.jpeg",
     oldPhoto: "fogao.jpeg"
   },
   {
