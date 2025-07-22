@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100vw;
   min-height: 35rem;
-  max-height: 80vh;
+  max-height: 77vh;
   overflow-y: scroll;
   overflow-x: hidden;
   display: flex;

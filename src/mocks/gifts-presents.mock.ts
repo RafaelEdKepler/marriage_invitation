@@ -6,7 +6,7 @@ export const presentsList = [
   },
   {
     name: "Trocar o Uno",
-    description: "O uninho nos leva para muitos lugares dentro da cidade, não seria algo tão emergencial, mas como viajamos muito até Santa Catarina, precisamos de um carro mais seguro. ",
+    description: "O Uninho nos leva para muitos lugares dentro da cidade, e não seria algo tão emergencial. Porém, como viajamos muito até Santa Catarina, precisamos de um carro mais confortável e seguro.",
     photo: "carro-completo.jpeg",
     oldPhoto: "uno.jpeg"
   },
@@ -18,12 +18,12 @@ export const presentsList = [
   },
   {
     name: "Jogo de mesa e cadeiras",
-    description: "Esse é o único móvel que não temos, usamos a mesa que já tem na casa e cadeiras da Meuc, então se nos mudarmos ficamos sem. Ainda não temos ideia de modelos, a imagem é apenas ilustrativa.",
+    description: "A mesa é o único móvel que não temos, usamos uma que já estava na casa, então se nos mudarmos ficaremos sem.",
     photo: "mesa.jpeg"
   },
   {
     name: "Robô escravo",
-    description: "Quem sabe para você este item estaria no final da lista de prioridades, mas como a nossa Golden perde muito pelos (como a foto comprova, esse é o monte que varremos todos os dias), e para piorar temos o barro vermelho do sul por aqui, o piso claro agradeceria muito uma limpeza mais constante. Logo, este aqui já está na lista de necessidades!",
+    description: "Quem sabe para você este item estaria no final da lista de prioridades, mas como a nossa Golden perde muitos pelos (como a foto comprova, esse é o monte que varremos todos os dias). E para piorar, temos o barro vermelho do sul por aqui, então o piso claro agradeceria muito uma limpeza mais constante. Logo, este aqui já está na lista de necessidades!",
     photo: "robo.jpeg",
     oldPhoto: "pelos.jpeg"
   },
@@ -34,19 +34,19 @@ export const presentsList = [
   },
   {
     name: "Fogão",
-    description: "O nosso já está bem velhinho, e o forno vaza bastante gás (tanto que evitamos usar), e como a nossa realidade é mudar com frequência de casa/cidade, geralmente não conseguirmos deixar o fogão num local bom na cozinha para se adequar à mangueira de gás já instalada. O local atual é muito ruim, não conseguimos deixar a janela aberta e cozinhar ao mesmo tempo!",
+    description: "O nosso fogão já está bem velhinho, e o forno vaza bastante gás (tanto que evitamos usar). Além disso, como a nossa realidade é mudar com frequência de casa/cidade, e a casa é emprestada, geralmente não conseguimos deixar o fogão num local bom na cozinha para se adequar à mangueira de gás já instalada. Por isso pretendemos comprar um fogão por indução!",
     photo: "fogao_novo.jpeg",
     oldPhoto: "fogao.jpeg"
   },
   {
     name: "Geladeira",
-    description: "Essa geladeira foi comprada pela Thaysa no início da faculdade, e para ela já era pequena, além do freezer que é minúsculo. ",
+    description: "A nossa geladeira foi comprada pela Thaysa no início da faculdade, e para ela já era pequena, e como o freezer é minúsculo, já queremos comprar um modelo maior.",
     photo: "geladeira_nova.jpg",
     oldPhoto: "geladeira.jpeg",
   },
   {
     name: "Colchão",
-    description: "Esse colchão também já teve outros donos, tem servido muito bem ao sono da Thaysa, mas já está com alguns buracos e pedindo para ser trocado (provavelmente pegaremos uma cama maior também).",
+    description: "Nosso colchão também já teve outros donos, e tem servido muito bem ao sono da Thaysa. Mas já está com alguns buracos e pedindo para ser trocado (provavelmente pegaremos uma cama maior também).",
     photo: "cama.jpeg"
   }
 ]

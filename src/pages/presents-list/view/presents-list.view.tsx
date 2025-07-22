@@ -16,10 +16,10 @@ export default function PresentsListView({ presentsList, onClickQrCode, showPopu
         <h2>Nesta página você irá encontrar ideias para nos presentear!</h2>
         <DescriptionContainer>
           <p>
-            <span>Como já temos a casa mobiliada, nós precisamos de $$$ para começar a trocar móveis/eletrônicos que estão começando a nos deixar na mão. Muitas coisas que temos são de 2ª ou até 3ª mão, e agora está chegando a hora de investirmos em coisas novas. </span>
+            <span>Como já temos a casa mobiliada, nós precisamos de $$$ para começar a trocar móveis/eletrônicos que estão começando a nos deixar na mão. Muitos dos móveis e eletrodomésticos que temos foram doadas, e agora está chegando a hora de investirmos em coisas novas.</span>
           </p>
           <p>
-            <span>Não queremos apenas pedir dinheiro de presente, mas que você conheça nossos sonhos e planos e, se você assim desejar, nos ajudar a alcançá-los.</span>
+            <span>Não queremos apenas pedir dinheiro de presente, mas que você conheça os nossos sonhos e planos e, se você assim desejar, nos ajudar a alcançá-los.</span>
           </p>
         </DescriptionContainer>
         {presentsList && (
@@ -35,7 +35,10 @@ export default function PresentsListView({ presentsList, onClickQrCode, showPopu
         )}
         <DescriptionContainer>
           <p>
-            <span>O qrcode para todos os presentes encontra-se abaixo, que irá direcionar para a conta bancária do Rafa, mas pedimos que quando fizeres o pix, coloque na descrição para qual presente você gostaria de colaborar. Conforme formos comprando, queremos poder agradecer de forma especial a quem ajudou.</span>
+            <span>*Ainda não temos ideia de modelos, as fotos são apenas ilustrativas.</span>
+          </p>
+          <p>
+            <span>O qrcode para todos os presentes encontra-se abaixo, e irá direcioná-lo(a) para a conta bancária do Rafa, mas pedimos que quando fizeres o pix, coloque na descrição para qual presente você gostaria de colaborar. Conforme formos comprando, queremos poder agradecer de forma especial a quem ajudou.</span>
           </p>
           <p>
             <span>E desde já agradecemos a cada um por ajudar o início da nossa família, nesta fase tão importante de nossas vidas!</span>
