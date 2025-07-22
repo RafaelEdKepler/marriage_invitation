@@ -19,7 +19,7 @@ export const CarouselContainer = styled.div<CarouselContainerType>`
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
-  background-position-y: 25%;
+  background-position-y: 50%;
   transition: 0.2s;
   animation: ${props => props.source ? 'imageTransition 2s' : ''};
 

@@ -6,7 +6,7 @@ export default function AboutUsController() {
 
   const { innerWidth } = window;
 
-  const carouselImagesRef = useRef(["carousel_image.jpeg", "carousel_image_2.jpeg", "carousel_image_3.jpeg", "carousel_image_4.jpeg"])
+  const carouselImagesRef = useRef(["151.jpg", "209.jpg", "246.jpg", "277.jpg", "323.jpg"])
 
   const isPhoneSize = innerWidth <= 768;
 
