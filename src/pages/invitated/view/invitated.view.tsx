@@ -17,6 +17,7 @@ export default function InvitatedView({ marriageDate }: InvitatedType) {
         <TimerComponent
           date={marriageDate}
           type="down"
+          minutes={true}
         />
       </TextAreaComponent>
       <FooterComponent />

@@ -41,5 +41,6 @@ export interface BulletType {
 
 export interface TimerType {
   date: Date,
-  type: "up" | "down"
+  type: "up" | "down",
+  minutes?: boolean;
 }

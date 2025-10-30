@@ -22,16 +22,10 @@ export const presentsList = [
     photo: "mesa.jpeg"
   },
   {
-    name: "Robô escravo",
-    description: "Quem sabe para você este item estaria no final da lista de prioridades, mas como a nossa Golden perde muitos pelos (como a foto comprova, esse é o monte que varremos todos os dias). E para piorar, temos o barro vermelho do sul por aqui, então o piso claro agradeceria muito uma limpeza mais constante. Logo, este aqui já está na lista de necessidades!",
-    photo: "robo.jpeg",
-    oldPhoto: "pelos.jpeg"
-  },
-  {
-    name: "Guarda-roupas",
-    description: "Temos um, mas a Thaysa consome todo o espaço, então precisamos muito de um maior!",
-    photo: "guarda-roupas.jpg"
-  },
+    name: "Ar Condicionado",
+    description: "Viver no noroeste do Rio Grande do Sul significa enfrentar verões longos e extremamente quentes, com temperaturas que frequentemente ultrapassam os 35 °C. O ar-condicionado torna-se essencial para garantir conforto, bem-estar e qualidade de vida em meio ao calor intenso da região.",
+    photo: "ar.jpg",    
+  },  
   {
     name: "Fogão",
     description: "O nosso fogão já está bem velhinho, e o forno vaza bastante gás (tanto que evitamos usar). Além disso, como a nossa realidade é mudar com frequência de casa/cidade, e a casa é emprestada, geralmente não conseguimos deixar o fogão num local bom na cozinha para se adequar à mangueira de gás já instalada. Por isso pretendemos comprar um fogão por indução!",
