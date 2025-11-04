@@ -18,7 +18,7 @@ export const Container = styled.section`
   @media (max-height: 650px) {
     font-size: 1.25rem;
     margin-top: 1rem;
-  }
+  }  
 `;
 
 export const ContainerWhiteArea = styled.div`
@@ -33,6 +33,11 @@ export const ContainerWhiteArea = styled.div`
 
   @media (max-width: 830px) {
     width: 85%;
+  }
+
+  @media (max-width: 900px) {
+    height: 100vh;
+    background-color: transparent;
   }
 `;
 

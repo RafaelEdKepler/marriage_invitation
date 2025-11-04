@@ -13,8 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     background-image: url('/casamento.gif'), url('/fundo_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    overflow: hidden;
+    height: 100%;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,5 +22,9 @@ export const GlobalStyles = createGlobalStyle`
     }
     -ms-overflow-style: none;
     scrollbar-width: none;
+
+    @media (min-width: 900px) {
+      overflow: hidden;
+    }
   }
 `;

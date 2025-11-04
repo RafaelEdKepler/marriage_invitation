@@ -18,6 +18,10 @@ export const Container = styled.div`
   @media (min-width: 1000px) and (max-height: 700px) {
     height: 3rem;
   }
+
+  @media (max-width: 900px) {
+    height: 2rem;
+  }
 `;
 
 export const OnlyTitleContainer = styled.div`
@@ -38,6 +42,10 @@ export const OnlyTitleContainer = styled.div`
 
     @media (min-width: 1000px) and (max-height: 700px) {
       font-size: 1.25rem;
+    }
+   
+    @media (max-width: 900px) {
+      font-size: 17px;
     }
   }
 
@@ -84,6 +92,10 @@ export const SocialMediaContainer = styled(OnlyTitleContainer)`
 
       @media (min-width: 1000px) and (max-height: 700px) {
         font-size: 1rem;
+      }
+     
+      @media (max-width: 900px) {
+        font-size: 12px;
       }
     }
   }
