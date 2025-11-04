@@ -39,6 +39,11 @@ export const ContainerWhiteArea = styled.div`
     height: 100vh;
     background-color: transparent;
   }
+
+  @media (max-width: 1400px) and (max-height: 800px) {
+    height: 100vh;
+    background-color: transparent;
+  }
 `;
 
 export const CenteredContent = styled.div`
