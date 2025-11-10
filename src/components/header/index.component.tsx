@@ -20,7 +20,7 @@ export default function HeaderComponent() {
     },
     {
       title: "Transmissão",
-      link: "/in-development",
+      link: "/transmission",
     },
     {
       title: "Lista de Presentes",
