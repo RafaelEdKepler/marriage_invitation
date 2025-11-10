@@ -9,8 +9,8 @@ export default function TransmissionView() {
       <HeaderComponent />
       <FooterComponent />
       <TextAreaComponent>
-        <p>Cada vez mais o dia se aproxima e junto com nossa ansiedade e nervosismo, nossa felicidade aumenta em poder falar que iremos transmitir o nosso grande momento para todos que puderes (e quiserem) assistir!</p>
-        <p>A cerimônia será transmitida a partir do Google Meet, e já queremos passar alguns pontos sobre ela! Ela está prevista para começar às 17h em ponto. Mas, como todos sabemos, imprevistos acontecem, então ela pode acabar atrasando. Isso não afeta a transmissão, que deve iniciar alguns minutos antes das 17 horas, para que todos possam também já ir abrindo e se preparando!</p>
+        <p>Cada vez mais o dia se aproxima e junto com nossa ansiedade e nervosismo, nossa felicidade aumenta em poder falar que iremos transmitir o nosso grande momento para todos que puderem (e quiserem) assistir!</p>
+        <p>A cerimônia está prevista para começar às 17h em ponto. Mas, como todos sabemos, imprevistos acontecem, então ela pode acabar atrasando. Isso não afeta a transmissão, que deve iniciar alguns minutos antes das 17 horas, para que todos possam também já ir abrindo e se preparando!</p>
         <br/>
         <p>A transmissão terá os microfones todos <b>bloqueados</b> desde o começo dela! Então, se quiser compartilhar algo, comunique via chat!</p>
         <br/>
