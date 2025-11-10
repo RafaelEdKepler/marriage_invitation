@@ -5,6 +5,7 @@ import SpecialInvite from "./pages/special-invite";
 import AboutUs from "./pages/about-us";
 import Development from "./pages/development";
 import PresentsList from "./pages/presents-list";
+import TransmissionController from "./pages/transmission/controller/transmission.controller";
 
 
 export default function Router() {
@@ -16,6 +17,7 @@ export default function Router() {
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/in-development" element={<Development />} />
       <Route path="/gifts-list" element={<PresentsList />} />
+      <Route path="/transmission" element={<TransmissionController />} />
     </Routes>
   )
 }
