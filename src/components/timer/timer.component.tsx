@@ -14,10 +14,10 @@ export default function TimerComponent({ date, type, minutes }: TimerType) {
   const handleCalculateCountdown = useCallback(() => {
     const { months, days, hours, minutes } = type === "up" ? calculateDifferenceInTime(date, new Date()) : calculateDifferenceInTime(new Date(), date);
 
-    setTimerMonths(months < 0 ? "00" : months);
-    setTimerDays(days < 0 ? "00" : days);
-    setTimerHours(hours < 0 ? "00" : hours);
-    setTimerMinutes(minutes < 0 ? "00" : minutes);
+    setTimerMonths(Number(months) < 0 ? "00" : months);
+    setTimerDays(Number(days) < 0 ? "00" : days);
+    setTimerHours(Number(hours) < 0 ? "00" : hours);
+    setTimerMinutes(Number(minutes) < 0 ? "00" : minutes);
   }, [date, type])
 
   useEffect(() => {
