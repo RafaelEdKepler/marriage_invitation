@@ -9,18 +9,7 @@ export const presentsList = [
     description: "O Uninho nos leva para muitos lugares dentro da cidade, e não seria algo tão emergencial. Porém, como viajamos muito até Santa Catarina, precisamos de um carro mais confortável e seguro.",
     photo: "carro-completo.jpeg",
     oldPhoto: "uno.jpeg"
-  },
-  {
-    name: "Aposentar a Brastemp",
-    description: "Essa aqui é guerreira, a Thaysa já é a terceira dona. Ela continua fazendo muito bem o seu trabalho, mas já foi reparada algumas vezes e na próxima vez que estragar não compensará consertar. Como ela fica no banheiro e temos pouco espaço, já iremos comprar uma que lava e seca, pois não temos secadora.",
-    photo: "lavaroupas_nova.png",
-    oldPhoto: "lavaroupas.jpeg",
-  },
-  {
-    name: "Jogo de mesa e cadeiras",
-    description: "A mesa é o único móvel que não temos, usamos uma que já estava na casa, então se nos mudarmos ficaremos sem.",
-    photo: "mesa.jpeg"
-  },
+  },  
   {
     name: "Ar Condicionado",
     description: "Viver no noroeste do Rio Grande do Sul significa enfrentar verões longos e extremamente quentes, com temperaturas que frequentemente ultrapassam os 35 °C. O ar-condicionado torna-se essencial para garantir conforto, bem-estar e qualidade de vida em meio ao calor intenso da região.",
