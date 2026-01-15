@@ -9,12 +9,7 @@ export const presentsList = [
     description: "O Uninho nos leva para muitos lugares dentro da cidade, e não seria algo tão emergencial. Porém, como viajamos muito até Santa Catarina, precisamos de um carro mais confortável e seguro.",
     photo: "carro-completo.jpeg",
     oldPhoto: "uno.jpeg"
-  },  
-  {
-    name: "Ar Condicionado",
-    description: "Viver no noroeste do Rio Grande do Sul significa enfrentar verões longos e extremamente quentes, com temperaturas que frequentemente ultrapassam os 35 °C. O ar-condicionado torna-se essencial para garantir conforto, bem-estar e qualidade de vida em meio ao calor intenso da região.",
-    photo: "ar.jpg",    
-  },  
+  },
   {
     name: "Fogão",
     description: "O nosso fogão já está bem velhinho, e o forno vaza bastante gás (tanto que evitamos usar). Além disso, como a nossa realidade é mudar com frequência de casa/cidade, e a casa é emprestada, geralmente não conseguimos deixar o fogão num local bom na cozinha para se adequar à mangueira de gás já instalada. Por isso pretendemos comprar um fogão por indução!",
